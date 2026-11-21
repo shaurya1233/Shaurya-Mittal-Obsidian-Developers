@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shaurya Mittal — Full-stack developer · God of HTML5</title>
+<meta name="description" content="Portfolio of Shaurya Mittal, showcasing 22 web projects, interactive interfaces and browser-based experiments built with HTML, CSS, JavaScript, Canvas and WebGL.">
+<link rel="canonical" href="https://shaurya1233.github.io/NOUMEN/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Shaurya Mittal">
+<meta name="theme-color" content="#100E0C">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NOUMEN">
+<meta property="og:title" content="Shaurya Mittal — Full-stack developer · God of HTML5">
+<meta property="og:description" content="22 web projects, interactive interfaces and browser-based experiments built with HTML, CSS, JavaScript, Canvas and WebGL.">
+<meta property="og:url" content="https://shaurya1233.github.io/NOUMEN/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NOUMEN — Shaurya Mittal">
+<meta name="twitter:description" content="A private digital collection of web projects and browser experiments.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23100E0C'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='28' fill='%23C6A15B'%3ESM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Sans:wght@400;500&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"NOUMEN","url":"https://shaurya1233.github.io/NOUMEN/","description":"The personal digital portfolio and creative development archive of Shaurya Mittal."},{"@type":"Person","name":"Shaurya Mittal","jobTitle":"Student Developer and AI-Assisted Digital Creator","url":"https://shaurya1233.github.io/NOUMEN/","knowsAbout":["HTML5","CSS","JavaScript","WebGL","HTML Canvas","Responsive web development","AI-assisted software development"],"sameAs":["https://github.com/shaurya1233","https://www.instagram.com/shaurya_mittal31/","https://leetcode.com/u/Qlk0uRwuTh/","https://mastodon.social/@shaurya_dev","https://codepen.io/SHAURYA-MITTAL-the-bashful","https://bsky.app/profile/mittalshaurya66-06.bsky.social"]}]}</script>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--g:#C6A15B;--g2:#D4AF65;--ch:#E4CF9B;--br:#967442;--bz:#634A2C;--wal:#24180F;--esp:#17100B;--ebo:#100E0C;--bur:#401B25;--wine:#542532;--iv:#E9DFC9;--pa:#D8C8A8;--cr:#F0E8D8;--li:#E5D8BF;--ink:#2a1d12;--gl:#7a5c2e;--serif:"Cormorant Garamond","EB Garamond",Garamond,Georgia,serif;--sans:"Instrument Sans","Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px;-webkit-text-size-adjust:100%}
+body{background:var(--ebo);color:var(--iv);font:20px/1.65 var(--serif);overflow-x:hidden;text-rendering:optimizeLegibility}
+body.lock{overflow:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ch);outline-offset:3px}
+ul,ol{padding:0;list-style:none}
+section{position:relative;padding:clamp(4.5rem,10vw,8.5rem) clamp(1.2rem,6vw,6rem)}
+.in{max-width:1180px;margin:auto}
+.wal{background:radial-gradient(ellipse at 50% 0,#3a2818,var(--wal) 55%,var(--esp))}
+.esp{background:linear-gradient(var(--esp),var(--ebo))}
+.bur{background:radial-gradient(ellipse at 50% 20%,var(--wine),var(--bur) 65%,#2a1017)}
+.ivo,.par,.mar{color:var(--ink)}
+.ivo{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .3 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),linear-gradient(var(--iv),var(--li))}
+.par{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .3 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),linear-gradient(var(--pa),#cdbb97)}
+.mar{background:linear-gradient(135deg,rgba(255,255,255,.4),transparent 45%),repeating-linear-gradient(115deg,transparent 0 70px,rgba(150,116,66,.07) 70px 71px),var(--cr)}
+.eb{font:500 .72rem/1.4 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--g)}
+.ivo .eb,.par .eb,.mar .eb{color:var(--gl)}
+h1,h2,h3{font-weight:500;line-height:1.04}
+h2{font-size:clamp(2.5rem,7.4vw,5.8rem);margin:.6rem 0 1rem;letter-spacing:.005em}
+h3{font-size:1.5rem}
+.sub{font-style:italic;font-size:1.35rem;opacity:.85;max-width:38ch}
+.orn{display:block;width:min(260px,70%);height:24px;margin:1.6rem 0;color:var(--g);fill:none;stroke:currentColor;stroke-width:1}
+.ivo .orn,.par .orn,.mar .orn{color:var(--br)}
+.ctr{text-align:center}.ctr .orn,.ctr .sub{margin-left:auto;margin-right:auto}
+.btn{display:inline-block;font:500 .74rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;padding:1.05rem 1.5rem;border:1px solid var(--g);color:var(--ch);background:transparent;cursor:pointer;text-decoration:none;transition:background .5s,color .5s,letter-spacing .5s}
+.btn:hover{background:rgba(198,161,91,.14);letter-spacing:.26em}
+.ivo .btn,.par .btn,.mar .btn{color:#5a4222;border-color:var(--gl)}
+.rv{transition:opacity 1.2s,transform 1.2s}
+.js .rv{opacity:0;transform:translateY(16px)}
+.js .rv.on{opacity:1;transform:none}
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:.9rem clamp(1rem,4vw,3rem);background:linear-gradient(rgba(16,14,12,.92),rgba(16,14,12,.55));border-bottom:1px solid rgba(150,116,66,.35);backdrop-filter:blur(6px)}
+.brand{font-size:1.5rem;letter-spacing:.32em;text-decoration:none;color:var(--ch)}
+#mb{font:500 .72rem var(--sans);letter-spacing:.24em;text-transform:uppercase;background:none;border:1px solid var(--br);color:var(--ch);padding:.7rem 1rem;cursor:pointer;min-height:44px}
+#pg{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:linear-gradient(90deg,var(--br),var(--ch));transform:scaleX(0);transform-origin:0}
+#dir{position:fixed;inset:0;z-index:60;background:radial-gradient(ellipse at 50% 40%,#3a2818,var(--ebo));display:flex;flex-direction:column;justify-content:center;padding:5rem 1.5rem 2rem;visibility:hidden;opacity:0;transition:opacity .6s,visibility .6s;overflow:auto}
+#dir.open{visibility:visible;opacity:1}
+#dir ol{max-width:720px;margin:auto;width:100%;border-top:1px solid var(--br)}
+#dir li{border-bottom:1px solid rgba(150,116,66,.4)}
+#dir a{display:flex;gap:1.2rem;align-items:baseline;padding:.75rem .2rem;text-decoration:none;font-size:clamp(1.3rem,4.5vw,2rem);transition:padding .4s,color .4s}
+#dir a:hover,#dir a:focus-visible{padding-left:1rem;color:var(--ch)}
+#dir i{font:500 .8rem var(--sans);letter-spacing:.2em;color:var(--g);min-width:3.2rem;font-style:normal}
+#dx{position:absolute;top:.9rem;right:clamp(1rem,4vw,3rem)}
+/* intro */
+#intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 50%,#2b1c10,var(--ebo) 65%);transition:opacity 1s,visibility 1s}
+#intro.out{opacity:0;visibility:hidden}
+#intro .box{border:1px solid var(--br);outline:1px solid rgba(198,161,91,.3);outline-offset:8px;padding:clamp(2rem,6vw,3.6rem);margin:1.6rem;max-width:660px;animation:fd 2s both}
+#intro .a{opacity:0;animation:fd 1.4s var(--d) forwards}
+#intro h1{font-size:clamp(2.2rem,8vw,4.2rem);letter-spacing:.08em;color:var(--ch)}
+.plq{display:inline-block;border:1px solid var(--g);padding:.6rem 1.4rem;margin-bottom:1.6rem}
+.plq b{display:block;font-weight:500;font-size:1.6rem;letter-spacing:.4em;color:var(--g2)}
+#sk{position:absolute;top:1rem;right:1rem}
+@keyframes fd{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+/* hero */
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding-top:6.5rem;overflow:hidden}
+#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .in{position:relative}
+.hf{width:min(330px,68vw);margin:0 auto 1.5rem;transition:transform .6s ease-out}
+.hf svg{display:block;width:100%;height:auto;filter:drop-shadow(0 0 40px rgba(198,161,91,.18))}
+.hl{fill:none;stroke:url(#gg);stroke-width:1.3}
+.hero h1{font-size:clamp(2.8rem,10vw,8rem);letter-spacing:.04em;color:var(--iv)}
+.hero .idn{font-style:italic;font-size:clamp(1.2rem,3vw,1.7rem);color:var(--ch);margin:.6rem 0 1rem}
+.hero p.lead{max-width:44ch;margin:0 auto 2rem;opacity:.9}
+.bt{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+/* author */
+.two{display:grid;gap:clamp(2rem,6vw,5rem);grid-template-columns:1fr}
+@media(min-width:860px){.two{grid-template-columns:.8fr 1.2fr;align-items:start}}
+.pf{background:radial-gradient(circle at 50% 40%,var(--wine),var(--esp));border:1px solid var(--br);outline:1px solid rgba(150,116,66,.5);outline-offset:8px;padding:1.4rem;max-width:360px;margin:0 auto;color:var(--g)}
+.pf svg{width:100%;height:auto;display:block}.pf figcaption{text-align:center;margin-top:.6rem}
+.bio p{margin-bottom:1rem;max-width:62ch}
+.bio p:first-of-type::first-letter{float:left;font-size:4.6rem;line-height:.8;padding:.3rem .6rem 0 0;color:var(--gl);font-weight:600}
+.ints{columns:2 220px;margin-top:.8rem;font-size:1.05rem}
+.ints li,.cat li{break-inside:avoid;padding:.15rem 0 .15rem 1.2rem;position:relative}
+.ints li::before,.cat li::before{content:"";position:absolute;left:.1rem;top:.8em;width:6px;height:6px;background:var(--br);transform:rotate(45deg)}
+/* collection */
+.ctl{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center;margin:2.2rem 0 1.6rem;padding:1rem 0;border-block:1px solid rgba(150,116,66,.5)}
+.fl{display:flex;flex-wrap:wrap;gap:.5rem}
+.fl button{font:500 .7rem var(--sans);letter-spacing:.18em;text-transform:uppercase;background:none;border:1px solid rgba(150,116,66,.6);color:var(--iv);padding:.7rem .9rem;cursor:pointer;min-height:44px}
+.fl button[aria-pressed=true]{background:var(--g);color:var(--ebo);border-color:var(--g)}
+#q{font:1rem var(--sans);background:rgba(233,223,201,.06);border:1px solid var(--br);color:var(--iv);padding:.7rem .9rem;min-height:44px;width:min(100%,280px)}
+#cnt{font:.8rem var(--sans);letter-spacing:.12em;opacity:.8;margin-bottom:1rem}
+#grid{display:grid;gap:clamp(1.2rem,3vw,2.2rem);grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));grid-auto-flow:dense}
+.card{background:linear-gradient(var(--wal),var(--esp));border:1px solid var(--br);padding:10px;box-shadow:0 0 0 4px var(--esp),0 0 0 5px rgba(198,161,91,.4);display:flex;flex-direction:column}
+.art{border:1px solid rgba(228,207,155,.45);box-shadow:inset 0 0 30px rgba(0,0,0,.6);aspect-ratio:4/3;background:#17100B;position:relative;overflow:hidden}
+.art svg{width:100%;height:100%;display:block}
+.art .n{position:absolute;left:.6rem;bottom:.4rem;font:500 .65rem var(--sans);letter-spacing:.18em;color:var(--ch);opacity:.8}
+.lab{background:var(--li);color:var(--ink);padding:1rem 1.1rem 1.2rem;margin-top:10px;flex:1;display:flex;flex-direction:column}
+.lab .no{font:500 .68rem var(--sans);letter-spacing:.2em;color:var(--gl)}
+.lab h3{font-size:1.45rem;margin:.2rem 0}
+.lab .ct{font-style:italic;color:var(--bz)}
+.lab p{font-size:1rem;line-height:1.5;margin:.4rem 0}
+.st{font:500 .68rem/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--bur)}
+.acts{margin-top:auto;padding-top:.8rem;display:flex;gap:.6rem;flex-wrap:wrap}
+.acts .btn{padding:.8rem 1rem;font-size:.66rem}
+@media(min-width:900px){.card.w{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:10px}.card.w .lab{margin:0}.card.w .art{aspect-ratio:auto;min-height:260px}}
+.none{padding:3rem 0;text-align:center;font-style:italic}
+dialog{padding:0;border:1px solid var(--br);outline:1px solid var(--g);outline-offset:-9px;background:var(--li);color:var(--ink);width:min(720px,92vw);max-height:90svh}
+dialog::backdrop{background:rgba(16,14,12,.82)}
+.dg{padding:2rem clamp(1.2rem,4vw,2.4rem)}
+.dg .art{margin-bottom:1.2rem}
+.dg h3{font-size:2.2rem}
+.dg .x{float:right}
+/* interlude */
+.qt{text-align:center;padding-block:clamp(4rem,9vw,7rem)}
+.qt svg{width:min(300px,70%);height:auto;color:var(--g);margin-bottom:1rem}
+.qt blockquote{font-size:clamp(1.8rem,5.4vw,3.8rem);font-style:italic;line-height:1.15;color:var(--ch);max-width:20ch;margin:auto}
+/* collaborations */
+.ldg{margin-top:2rem;border-top:1px solid var(--br)}
+.ldg li{display:grid;gap:.4rem 2rem;padding:1.4rem 0;border-bottom:1px solid rgba(99,74,44,.4);grid-template-columns:1fr}
+@media(min-width:760px){.ldg li{grid-template-columns:1.2fr 1.4fr auto;align-items:center}}
+.ldg h3{font-size:1.9rem}
+/* manifesto */
+.mf li{padding:clamp(1.4rem,4vw,2.6rem) 0;border-top:1px solid rgba(150,116,66,.55);text-align:center;font-size:clamp(1.7rem,5.6vw,4.3rem);line-height:1.1;letter-spacing:.02em;color:var(--iv)}
+.mf li:last-child{border-bottom:1px solid rgba(150,116,66,.55)}
+.mf small{display:block;font:500 .7rem var(--sans);letter-spacing:.26em;color:var(--g);margin-bottom:.7rem}
+/* present / atelier / craft */
+.cols{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));margin-top:2rem}
+.cols>div{border:1px solid var(--br);outline:1px solid rgba(150,116,66,.4);outline-offset:6px;padding:1.6rem}
+.cat li{padding-left:1.2rem}
+.tl{margin-top:2.4rem;border-left:1px solid var(--g);margin-left:.6rem}
+.tl li{display:grid;grid-template-columns:3.4rem 1fr;padding:1rem 0 1.2rem 1rem;position:relative}
+.tl li::before{content:"";position:absolute;left:-5px;top:1.55rem;width:9px;height:9px;background:var(--g);transform:rotate(45deg)}
+.tl b{font:500 2rem var(--serif);color:var(--g)}
+.tl h3{letter-spacing:.14em;text-transform:uppercase;font-size:1.15rem}
+.note{font-style:italic;margin-top:1.5rem;opacity:.85}
+.empty{border:1px solid var(--br);outline:1px solid rgba(99,74,44,.45);outline-offset:7px;padding:clamp(2rem,6vw,4rem);text-align:center;max-width:620px;margin:2.5rem auto 0}
+/* correspondence */
+#correspondence{background:radial-gradient(circle at 85% 15%,rgba(212,175,101,.22),transparent 35%),radial-gradient(ellipse at 50% 0,#3a2818,var(--wal) 60%,var(--ebo));text-align:center}
+.env{width:min(340px,80%);margin:0 auto 2rem;display:block}
+.mail{font-size:clamp(1.4rem,5vw,2.6rem);color:var(--ch);text-decoration:none;border-bottom:1px solid var(--br);word-break:break-all}
+.soc{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;justify-content:center;margin:2rem 0;font:500 .74rem var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.soc a{text-decoration:none;border-bottom:1px solid var(--br);padding:.5rem 0}
+#cs{min-height:1.5em;font:.85rem var(--sans);letter-spacing:.1em;margin-top:.8rem;color:var(--ch)}
+footer{background:var(--ebo);text-align:center;padding:2rem 1rem;font:.7rem var(--sans);letter-spacing:.2em;color:var(--br);text-transform:uppercase}
+#top{position:fixed;right:1rem;bottom:1rem;z-index:40;width:48px;height:48px;border:1px solid var(--g);background:rgba(16,14,12,.85);color:var(--ch);cursor:pointer;opacity:0;visibility:hidden;transition:opacity .4s}
+#top.on{opacity:1;visibility:visible}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}#intro .a{opacity:1}.js .rv{opacity:1;transform:none}}
+@media(max-width:600px){body{font-size:19px}.hero{padding-top:6rem}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Special+Elite&display=swap">
+<style id="v2">
+:root{--disp:"Playfair Display","Abril Fatface",Didot,"Bodoni 72",Georgia,serif;--type:"Special Elite","Courier New",monospace;--noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .9 0 0 0 0 .7 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");--dam:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' fill='%23C6A15B' fill-opacity='.075'%3E%3Cpath d='M60 8c9 15 9 28 0 44-9-16-9-29 0-44zM60 112c9-15 9-28 0-44-9 16-9 29 0 44zM8 60c15-9 28-9 44 0-16 9-29 9-44 0zM112 60c-15-9-28-9-44 0 16 9 29 9 44 0z'/%3E%3Ccircle cx='60' cy='60' r='6'/%3E%3Cpath d='M0 0l10 10L0 20zM120 0l-10 10 10 10zM0 120l10-10-10-10zM120 120l-10-10 10-10z'/%3E%3C/svg%3E")}
+section{padding-inline:clamp(2.6rem,7vw,6rem)}
+main>section:not(#entrance){margin-top:-16px;padding-top:calc(clamp(4.5rem,10vw,8.5rem) + 16px)}
+.wal{background:var(--dam),radial-gradient(ellipse at 50% 0,#3a2818,var(--wal) 55%,var(--esp))}
+.esp{background:var(--dam),linear-gradient(var(--esp),var(--ebo))}
+.bur{background:var(--dam),radial-gradient(ellipse at 50% 20%,var(--wine),var(--bur) 65%,#2a1017)}
+#correspondence{background:radial-gradient(circle at 85% 15%,rgba(212,175,101,.25),transparent 35%),var(--dam),radial-gradient(ellipse at 50% 0,#3a2818,var(--wal) 60%,var(--ebo))}
+.eb,.lab .no,.st,#cnt,.fl button,#q,.mf small,#mb,.btn,.soc,.rail,#cs,.stamp span{font-family:var(--type)}
+.eb{letter-spacing:.2em}
+h2{font:900 clamp(2.1rem,8.2vw,6.8rem)/.95 var(--disp);margin:.6rem 0 1.2rem;color:var(--iv);text-shadow:3px 3px 0 var(--bz),6px 6px 0 rgba(0,0,0,.35);overflow-wrap:break-word}
+.ivo h2,.par h2,.mar h2{color:#2a1d12;text-shadow:3px 3px 0 rgba(198,161,91,.7),6px 6px 0 rgba(99,74,44,.25)}
+.lab h3,.tl b,.stamp b,.ldg h3{font-family:var(--disp);font-weight:900}
+.lab h3{font-size:1.45rem;text-transform:uppercase;line-height:1}
+/* frame, rails, grain */
+#fr{position:fixed;inset:8px;z-index:55;pointer-events:none;border:1px solid rgba(198,161,91,.7);mix-blend-mode:difference}
+#fr::after{content:"";position:absolute;inset:4px;border:1px solid rgba(198,161,91,.35)}
+.rail{position:fixed;top:50%;z-index:56;writing-mode:vertical-rl;font-size:.62rem;letter-spacing:.45em;text-transform:uppercase;color:var(--ch);mix-blend-mode:difference;white-space:nowrap;text-decoration:none;pointer-events:none}
+.rail.l{left:20px;transform:translateY(-50%) rotate(180deg)}.rail.r{right:20px;transform:translateY(-50%);pointer-events:auto}
+#vig{position:fixed;inset:0;z-index:54;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,transparent 55%,rgba(10,6,3,.5))}
+#grain{position:fixed;inset:-50%;z-index:53;pointer-events:none;opacity:.13;background:var(--noise);animation:gr .9s steps(6) infinite}
+@keyframes gr{0%{transform:translate(0,0)}20%{transform:translate(-5%,3%)}40%{transform:translate(4%,-6%)}60%{transform:translate(-3%,5%)}80%{transform:translate(6%,2%)}}
+/* buttons: struck-metal retro */
+.btn,.ivo .btn,.par .btn,.mar .btn{background:var(--g);color:#17100B;border:2px solid #17100B;box-shadow:4px 4px 0 var(--br);letter-spacing:.16em;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover,.ivo .btn:hover,.par .btn:hover{background:var(--ch);transform:translate(2px,2px);box-shadow:2px 2px 0 var(--br);letter-spacing:.16em}
+.hero .btn:nth-child(2){background:transparent;color:var(--ch);border-color:var(--g);box-shadow:4px 4px 0 rgba(198,161,91,.35)}
+.fl button[aria-pressed=true]{box-shadow:3px 3px 0 var(--br)}
+/* hero */
+.hero{padding-top:6.5rem}
+#gl,#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(circle 380px at var(--mx,50%) var(--my,35%),rgba(212,175,101,.2),transparent 70%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--dam)}
+.hero .in{z-index:2}
+.hero h1{font:900 clamp(3.2rem,13.5vw,11rem)/.88 var(--disp);letter-spacing:-.01em;color:var(--iv);text-shadow:4px 4px 0 var(--bz),8px 8px 0 rgba(0,0,0,.5)}
+.hero .idn{font-family:var(--type);font-style:normal;letter-spacing:.12em;font-size:clamp(.95rem,2.6vw,1.3rem);margin:1.4rem 0 1rem}
+#sun{position:absolute;left:50%;top:0;width:min(1100px,170vw);aspect-ratio:1;transform:translate(-50%,-22%);animation:rot 300s linear infinite;pointer-events:none;fill:none;stroke:var(--g);stroke-width:.25;opacity:.55;-webkit-mask-image:radial-gradient(circle,#000 22%,transparent 68%);mask-image:radial-gradient(circle,#000 22%,transparent 68%)}
+@keyframes rot{to{transform:translate(-50%,-22%) rotate(360deg)}}
+.stamp{position:absolute;left:0;top:-2.2rem;transform:rotate(-6deg);border:7px dotted var(--iv);background:var(--wine);padding:.6rem 1rem;color:var(--ch);text-align:left;box-shadow:0 10px 24px rgba(0,0,0,.55);z-index:3}
+.stamp b{display:block;font-size:1.5rem;letter-spacing:.06em;line-height:1}.stamp span{display:block;font-size:.66rem;letter-spacing:.15em;text-transform:uppercase}
+.scrl{display:block;width:max-content;margin:1.8rem auto 0;font:3.2rem/1 "Segoe UI Symbol",var(--serif);color:var(--ch);text-decoration:none;transform:rotate(90deg);animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:rotate(90deg) translateX(0)}50%{transform:rotate(90deg) translateX(10px)}}
+@media(max-width:900px){.hero{padding-top:9.8rem}.stamp{left:-.8rem;top:-5.4rem}}
+.mq{position:relative;z-index:3;overflow:hidden;background:var(--g);color:#17100B;border-block:2px solid #17100B;transform:rotate(-1.4deg);margin:-1.2rem -2rem 0;padding:.5rem 0;white-space:nowrap;box-shadow:0 8px 0 rgba(0,0,0,.35)}
+.mq div{display:inline-block;animation:mq 40s linear infinite;font:italic 900 1.7rem var(--disp)}
+.mq span{padding-right:1.4rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* collection: catalogue plates */
+.card{box-shadow:6px 6px 0 rgba(0,0,0,.5),0 0 0 4px var(--esp),0 0 0 5px rgba(198,161,91,.45);transition:transform .5s}
+.card:nth-child(3n+2){transform:rotate(.5deg)}.card:nth-child(3n){transform:rotate(-.5deg)}.card:hover{transform:rotate(0) translateY(-4px)}
+/* manifesto poster */
+#manifesto{background:var(--noise),radial-gradient(ellipse at 30% 15%,#b5532f,#8a3a22 55%,#5e2314);box-shadow:inset 0 0 180px rgba(30,8,4,.6);background-blend-mode:soft-light,normal}
+#manifesto .eb{color:var(--cr)}
+#manifesto h2{color:var(--cr);text-shadow:4px 4px 0 #1b0d0a}
+.mf li{border:0;text-align:left;text-transform:uppercase;font:900 clamp(2rem,8vw,6rem)/.95 var(--disp);letter-spacing:-.01em;padding:.45rem 0;color:var(--cr)}
+.mf li:nth-child(odd){color:#1b0d0a}
+.mf li:last-child{border:0}.mf small{color:var(--cr);opacity:.85}
+#intro h1{font-family:var(--disp);font-weight:900}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&display=swap">
+<style id="v3">
+:root{--cu:#C8692B;--nv:#0B1626;--dots:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1.5px) 0 0/14px 14px}
+main>section:not(.hero):not(.plates){min-height:96svh;display:flex;flex-direction:column;justify-content:center}
+.in{width:100%}
+h1,h2,.mf li,.stamp b,.lab h3,blockquote{filter:url(#ink)}
+.stamp b,.mq div{font-family:"Rye",var(--disp);font-style:normal;font-weight:400}
+.mq{background:var(--cu)}.mq div{font-size:1.4rem;letter-spacing:.05em}
+.js .wipe{clip-path:inset(-20px 100% -20px -20px);transition:clip-path 1.4s cubic-bezier(.7,0,.2,1)}
+.js .wipe.on{clip-path:inset(-20px)}
+.js .wipe.rv{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .wipe{clip-path:none!important}}
+/* intro: carved double doors */
+#intro{background:transparent}
+#intro::before,#intro::after{content:"";position:absolute;top:0;bottom:0;width:50.4%;background:radial-gradient(circle at 90% 50%,#D4AF65 0 8px,#634A2C 9px 11px,transparent 12px),var(--dam),#24180F;box-shadow:inset 0 0 0 16px #24180F,inset 0 0 0 17px rgba(198,161,91,.55),inset 0 0 0 44px #2b1d12,inset 0 0 0 45px rgba(198,161,91,.3);transition:transform 1.7s cubic-bezier(.7,0,.2,1)}
+#intro::before{left:0;border-right:2px solid var(--g)}
+#intro::after{right:0;border-left:2px solid var(--g);background:radial-gradient(circle at 10% 50%,#D4AF65 0 8px,#634A2C 9px 11px,transparent 12px),var(--dam),#24180F}
+#intro .box{position:relative;z-index:2;background:rgba(16,14,12,.86);transition:opacity .7s}
+#sk{z-index:3}
+#intro.out{opacity:1;visibility:visible;pointer-events:none}
+#intro.out .box,#intro.out #sk{opacity:0}
+#intro.out::before{transform:translateX(-101%)}#intro.out::after{transform:translateX(101%)}
+/* hero ring */
+.ring{transform-origin:200px 270px;animation:rg 120s linear infinite}
+@keyframes rg{to{transform:rotate(360deg)}}
+/* author: tracklist */
+.ints{columns:1;counter-reset:t;background:var(--nv);color:var(--cr);padding:1.4rem 1.6rem;border:1px solid var(--g);outline:1px solid rgba(150,116,66,.6);outline-offset:5px;font-family:var(--type);font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
+.ints li{counter-increment:t;padding:.5rem 0;border-bottom:1px solid rgba(198,161,91,.35);transition:padding .3s,color .3s}
+.ints li::before{content:counter(t,decimal-leading-zero);position:static;display:inline-block;width:3rem;height:auto;background:none;transform:none;color:var(--cu)}
+.ints li:hover{padding-left:.8rem;color:var(--ch)}
+/* rooms */
+#collection,#craft{background:var(--dots),linear-gradient(#0d1a2c,#07101c)}
+#atelier{background:var(--dam),radial-gradient(ellipse at 50% 0,#2f4a38,#1b2a21 60%,#0f1913)}
+#present{background:var(--noise),radial-gradient(ellipse at 50% 0,#dcae4a,#c4932f 70%,#a87a22);background-blend-mode:soft-light,normal;color:#4a1522}
+#present .eb,#present h3{color:#4a1522}#present h2{color:#4a1522;text-shadow:3px 3px 0 rgba(255,236,170,.6)}
+#present .cols>div{border-color:#4a1522;outline-color:rgba(74,21,34,.5)}#present .orn{color:#4a1522}#present .cat li::before{background:#4a1522}
+.card{position:relative;isolation:isolate;background:none;border:0;box-shadow:none;padding:12px}
+.card::before{content:"";position:absolute;z-index:-1;top:6%;right:-9%;width:76%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--cu) 0 12%,#e9dfc9 12% 14%,transparent 14%),repeating-radial-gradient(circle,#0a0a0a 0 2px,#222 2px 3px);box-shadow:0 6px 14px rgba(0,0,0,.6)}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;background:var(--cr);border:1px solid #17100B;box-shadow:6px 6px 0 rgba(0,0,0,.55)}
+.card .art{border-color:#17100B}.lab{background:transparent;border-top:1px solid #17100B;margin-top:12px;padding:1rem .2rem .2rem}
+/* interlude: waves */
+.qt{position:relative;overflow:hidden;align-items:center;text-align:center}
+.qt blockquote{font:900 italic clamp(2.2rem,8vw,6.4rem)/1 var(--disp);color:var(--cr);max-width:14ch;position:relative;z-index:2;text-shadow:4px 4px 0 #1b0d0a}
+#wv{position:absolute;left:0;bottom:0;width:100%;height:42%;fill:var(--nv);stroke:var(--cu);stroke-width:1.4;stroke-dasharray:16 3 2 3;z-index:1}
+#wv path{animation:wv 8s ease-in-out infinite alternate}
+@keyframes wv{to{transform:translateX(-50px)}}
+/* numbers: ticket stubs */
+.plates{background:var(--noise),radial-gradient(ellipse at 30% 20%,#d9772f,#b45a22 60%,#7c3a14);background-blend-mode:soft-light,normal;padding-block:clamp(3.5rem,8vw,6rem)}
+.plates .eb{color:#17100B;margin-bottom:1.6rem}
+.stubs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.4rem}
+.stubs li{position:relative;background:var(--cr);color:#17100B;padding:1.3rem .8rem;text-align:center;border:2px solid #17100B;box-shadow:6px 6px 0 #17100B}
+.stubs li::before,.stubs li::after{content:"";position:absolute;top:50%;width:20px;height:20px;border-radius:50%;background:#b45a22;border:2px solid #17100B;transform:translateY(-50%)}
+.stubs li::before{left:-12px}.stubs li::after{right:-12px}
+.stubs b{display:block;font:900 clamp(3rem,10vw,5.2rem)/1 var(--disp)}
+.stubs span{font:.7rem var(--type);letter-spacing:.14em;text-transform:uppercase}
+/* atelier: giant outlined numerals */
+.tl{border:0;margin:2rem 0 0}
+.tl li{display:block;min-height:44svh;padding:2rem 0;border-top:1px solid rgba(198,161,91,.5);position:relative}
+.tl li::before{display:none}
+.tl b{display:block;font-size:clamp(6rem,30vw,17rem);line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--g)}
+.tl h3{font:900 clamp(1.8rem,6vw,3.4rem)/1 var(--disp);letter-spacing:0;text-transform:uppercase;margin:.6rem 0 .4rem;color:var(--cr)}
+.tl p{max-width:40ch}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap">
+<style id="v4">
+:root{--wood:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.008 .28' numOctaves='4' seed='5'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23w)'/%3E%3C/svg%3E")}
+header{gap:.6rem}#hc{display:flex;gap:.5rem;align-items:center}
+#snd{font:500 .72rem var(--type);letter-spacing:.18em;text-transform:uppercase;background:none;border:1px solid var(--br);color:var(--ch);padding:.7rem .8rem;cursor:pointer;min-height:44px}
+@media(max-width:560px){.brand{font-size:1.05rem;letter-spacing:.16em}#snd,#mb{padding:.6rem .5rem;font-size:.58rem;letter-spacing:.08em}}
+#dir ol{columns:2 320px;column-gap:2rem;max-width:900px}#dir li{break-inside:avoid}#dir a{font-size:clamp(1.05rem,3.4vw,1.5rem)}
+/* cinematic intro */
+#intro .bar{position:absolute;left:0;right:0;height:11vh;background:#000;z-index:4;transition:transform 1.4s cubic-bezier(.7,0,.2,1)}
+#intro .bar.t{top:0}#intro .bar.b{bottom:0}#intro.out .bar.t{transform:translateY(-101%)}#intro.out .bar.b{transform:translateY(101%)}
+#intro .bd{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--g);stroke-width:1.5;vector-effect:non-scaling-stroke}
+#intro .bd rect{stroke-dasharray:1;stroke-dashoffset:1;animation:dr 3s .3s forwards;vector-effect:non-scaling-stroke}
+@keyframes dr{to{stroke-dashoffset:0}}
+.crest{display:block;width:clamp(86px,22vw,120px);margin:0 auto 1rem;filter:drop-shadow(0 0 18px rgba(198,161,91,.35))}
+#clk2{position:absolute;z-index:3;left:1.2rem;bottom:calc(11vh + .8rem);width:78px;opacity:.9}
+.mote{position:absolute;z-index:1;width:3px;height:3px;border-radius:50%;background:var(--ch);opacity:0;animation:mote 9s linear infinite}
+@keyframes mote{0%{opacity:0;transform:translateY(0)}25%{opacity:.8}100%{opacity:0;transform:translateY(-140px)}}
+/* clock */
+.clk svg{display:block;width:min(430px,88vw);margin:auto;filter:drop-shadow(0 24px 30px rgba(0,0,0,.6))}
+.lcd{font:1.05rem/1.7 var(--type);letter-spacing:.12em;color:var(--ch);margin-top:1rem}
+/* chronicle */
+.chr{position:relative;margin-top:2.4rem;padding-left:1.4rem;border-left:1px solid var(--gl)}
+.chr li{position:relative;padding:0 0 2.4rem 1rem}
+.chr li::before{content:"";position:absolute;left:-1.4rem;top:.4rem;width:11px;height:11px;background:var(--gl);transform:translateX(-5px) rotate(45deg)}
+.chr h3{font:900 clamp(1.6rem,5vw,2.4rem)/1 var(--disp)}
+@media(min-width:860px){.chr{border:0;padding:0}.chr::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--gl)}
+.chr li{width:50%;padding:0 3rem 2.6rem 0;text-align:right}.chr li::before{left:auto;right:-6px;transform:rotate(45deg)}
+.chr li:nth-child(even){margin-left:50%;padding:0 0 2.6rem 3rem;text-align:left}.chr li:nth-child(even)::before{right:auto;left:-6px}}
+/* blueprint */
+#blueprint{background:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px) 0 0/32px 32px,linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px) 0 0/32px 32px,radial-gradient(ellipse at 50% 30%,#1c4f9a,#0f2f63 70%);color:#e8f1ff}
+#blueprint .eb,#blueprint h3{color:#cfe3ff}#blueprint h2{color:#e8f1ff;text-shadow:3px 3px 0 rgba(0,0,0,.35)}
+.bpg{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:1.6rem}@media(min-width:860px){.bpg{grid-template-columns:1fr 1fr}}
+.bpl button{width:100%;text-align:left;font:.85rem var(--type);letter-spacing:.1em;text-transform:uppercase;background:none;color:#e8f1ff;border:1px dashed rgba(207,227,255,.6);padding:.8rem 1rem;margin-bottom:.5rem;cursor:pointer;min-height:44px}
+.bpl button[aria-pressed=true]{background:rgba(255,255,255,.2);border-style:solid}
+#bpd{width:min(320px,100%);display:block;margin:1rem auto}.bpr{fill:none;stroke:#cfe3ff;stroke-dasharray:5 3;cursor:pointer}.bpr.on{fill:rgba(255,255,255,.25);stroke-dasharray:none}
+#bpd text{fill:#e8f1ff;font:11px var(--type);text-anchor:middle;pointer-events:none}
+#bpt{border:1px solid #cfe3ff;padding:1.2rem;min-height:9rem}
+/* manuscript */
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.4rem 0}
+.tabs button{font:.74rem var(--type);letter-spacing:.14em;text-transform:uppercase;background:none;border:1px solid var(--gl);color:var(--ink);padding:.8rem 1rem;cursor:pointer;min-height:44px}
+.tabs button[aria-pressed=true]{background:var(--ink);color:var(--cr)}
+.sheet{background:repeating-linear-gradient(transparent 0 2.4rem,rgba(60,90,140,.28) 2.4rem calc(2.4rem + 1px)),var(--cr);border:1px solid var(--gl);box-shadow:8px 8px 0 rgba(99,74,44,.35);padding:2.2rem 1.4rem 1rem 3.4rem;position:relative;transform-origin:left center}
+.sheet::before{content:"";position:absolute;left:2.2rem;top:0;bottom:0;width:1px;background:rgba(170,40,40,.45)}
+.sheet.flip{animation:fp .9s cubic-bezier(.3,.7,.3,1)}@keyframes fp{from{transform:perspective(900px) rotateY(-70deg);opacity:.2}to{transform:none;opacity:1}}
+.notes li{font:clamp(1.5rem,4.4vw,2.1rem)/2.4rem "La Belle Aurore","Segoe Script",cursive;color:#1d2a4a;padding-bottom:.1rem}
+/* arms */
+.armsv{display:block;width:min(300px,70vw);margin:auto;filter:drop-shadow(0 14px 26px rgba(0,0,0,.6))}
+.dl li{padding:.7rem 0;border-bottom:1px solid rgba(198,161,91,.4)}.dl b{font-family:var(--disp)}
+/* archive */
+.lock{display:inline-flex;gap:.8rem;align-items:center;margin-top:1.4rem}
+#arch{margin-top:2rem;padding:1.6rem;border:1px solid var(--g);outline:1px solid rgba(150,116,66,.5);outline-offset:6px;animation:fd 1.2s both}
+#arch ul{margin:1rem 0}#arch li{padding:.5rem 0;border-bottom:1px dashed rgba(198,161,91,.4)}
+/* guestbook */
+.gb{display:grid;gap:1rem;max-width:620px;margin-top:1.6rem}
+.gb label{font:.75rem var(--type);letter-spacing:.16em;text-transform:uppercase;display:grid;gap:.4rem}
+.gb input,.gb textarea{font:1.1rem var(--serif);padding:.8rem;border:1px solid var(--gl);background:rgba(240,232,216,.7);color:var(--ink)}
+.gb button{justify-self:start}.hp{position:absolute;left:-9999px;opacity:0}#gbs{font:.85rem var(--type)}
+/* exhibition */
+#exh{width:100vw;height:100svh;max-width:none;max-height:none;margin:0;padding:0;border:0;outline:0;background:var(--dots),#07101c;color:var(--cr)}
+.exv{padding:1.2rem clamp(1rem,4vw,3rem);height:100%;overflow:auto;display:flex;flex-direction:column;gap:1.2rem}
+.exb{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem}.exb div{display:flex;gap:.5rem;flex-wrap:wrap}
+.exm{display:grid;gap:1.5rem}@media(min-width:900px){.exm{grid-template-columns:1.3fr 1fr}}
+#exa{aspect-ratio:4/3;border:2px solid var(--g)}#ext{font:900 clamp(2rem,6vw,4rem)/1 var(--disp)}
+#exf iframe{width:100%;height:70svh;border:2px solid var(--g);background:#fff}
+/* reliquary */
+#reliquary{background:repeating-linear-gradient(90deg,transparent 0 158px,rgba(0,0,0,.55) 158px 160px),var(--wood),linear-gradient(#3b2514,#1c1008);box-shadow:inset 0 0 200px rgba(0,0,0,.75);text-align:center}
+.rel{display:flex;justify-content:center;align-items:flex-end;gap:clamp(.5rem,4vw,3rem);margin-top:2rem}
+.rel .cr{width:min(340px,56vw);filter:drop-shadow(0 24px 30px rgba(0,0,0,.7))}.can{width:clamp(34px,8vw,58px)}
+.fl2{transform-box:fill-box;transform-origin:50% 100%;animation:fk .9s ease-in-out infinite alternate}
+@keyframes fk{0%{transform:scale(1,1) skewX(0)}35%{transform:scale(.9,1.1) skewX(4deg)}70%{transform:scale(1.06,.93) skewX(-4deg)}100%{transform:scale(.95,1.06)}}
+.gl2{animation:gp 2.4s ease-in-out infinite alternate}@keyframes gp{to{opacity:.55}}
+</style>
+</head>
+<body class="lock"><div id="fr" aria-hidden="true"></div><div id="vig" aria-hidden="true"></div><div id="grain" aria-hidden="true"></div><div class="rail l" aria-hidden="true">Crafted by Shaurya Mittal · Lucknow</div><a class="rail r" href="https://www.instagram.com/shaurya_mittal31/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#967442"/><stop offset=".35" stop-color="#D4AF65"/><stop offset=".6" stop-color="#C6A15B"/><stop offset="1" stop-color="#634A2C"/></linearGradient>
+<radialGradient id="ivf" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#F0E8D8"/><stop offset="1" stop-color="#D8C8A8"/></radialGradient>
+<linearGradient id="pew" x1="0" x2="1"><stop offset="0" stop-color="#d9dcde"/><stop offset=".35" stop-color="#8a8f94"/><stop offset=".7" stop-color="#4b4f53"/><stop offset="1" stop-color="#b9bdc0"/></linearGradient>
+<radialGradient id="fg" cx=".5" cy=".6" r=".5"><stop offset="0" stop-color="#ffd37a" stop-opacity=".8"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+<clipPath id="shd"><path d="M40 62h120v78c0 44-30 68-60 82-30-14-60-38-60-82z"/></clipPath>
+<symbol id="arms" viewBox="0 0 200 260"><g id="arl" fill="url(#gg)" opacity=".9"></g><path d="M66 44l-8-30 18 14 24-22 24 22 18-14-8 30z" fill="#542532" stroke="url(#gg)" stroke-width="2.5"/><g clip-path="url(#shd)"><rect x="40" y="62" width="60" height="80" fill="#542532"/><rect x="100" y="62" width="60" height="80" fill="#0B1626"/><rect x="40" y="142" width="60" height="90" fill="#0B1626"/><rect x="100" y="142" width="60" height="90" fill="#542532"/></g><g fill="none" stroke="url(#gg)" stroke-width="2.2"><path d="M40 62h120v78c0 44-30 68-60 82-30-14-60-38-60-82zM100 62v160M40 142h120"/><path d="M62 98l-12 12 12 12M88 98l12 12-12 12M80 94l-8 32"/><path d="M131 92c-8-6-16-6-24-2v32c8-4 16-4 24 2 8-6 16-6 24-2V90c-8-4-16-4-24 2zM131 92v32"/><circle cx="70" cy="182" r="9"/><path d="M70 164v-6M70 206v-6M52 182h-6M94 182h-6M57 169l-4-4M83 195l4 4M83 169l4-4M57 195l-4 4"/><path d="M118 216v-30a12 12 0 0 1 24 0v30zM124 216v-28a6 6 0 0 1 12 0v28"/></g><path d="M10 226q90 30 180 0v24q-90 30-180 0z" fill="#542532" stroke="url(#gg)" stroke-width="2"/><path id="rb" d="M22 243q78 22 156 0" fill="none"/><text font-family="Special Elite,Courier New,monospace" font-size="8.5" letter-spacing="1.2" fill="#E4CF9B" text-anchor="middle"><textPath href="#rb" startOffset="50%">FUNCTIO ANTE ORNAMENTUM</textPath></text></symbol>
+<g id="fan" fill="url(#pew)" stroke="#2c2f31" stroke-width="1.5"><path d="M-34 0A34 34 0 0 1 34 0z"/><path d="M0 0L-26-22M0 0L-14-31M0 0V-34M0 0L14-31M0 0L26-22" stroke="url(#gg)" stroke-width="2" fill="none"/><circle cx="-34" cy="0" r="4"/><circle cx="34" cy="0" r="4"/><path d="M-6-34l6-12 6 12z"/></g>
+<g id="ro" fill="url(#gg)"><ellipse rx="2.4" ry="6"/><ellipse rx="2.4" ry="6" transform="rotate(90)"/><ellipse rx="2" ry="5" transform="rotate(45)"/><ellipse rx="2" ry="5" transform="rotate(135)"/></g>
+<radialGradient id="vel" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#542532"/><stop offset="1" stop-color="#17100B"/></radialGradient>
+<filter id="ink" x="-3%" y="-8%" width="106%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/></filter><pattern id="hat" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V3" stroke="#C6A15B" stroke-opacity=".2" stroke-width=".6"/></pattern><symbol id="orn" viewBox="0 0 240 24"><path d="M0 12H92M148 12H240M100 12c4-9 11-9 14 0M140 12c-4-9-11-9-14 0"/><path d="M120 3l9 9-9 9-9-9z"/><circle cx="120" cy="12" r="1.5"/></symbol>
+<symbol id="mono" viewBox="0 0 240 320"><ellipse cx="120" cy="160" rx="112" ry="150" fill="none" stroke="url(#gg)" stroke-width="6"/><ellipse cx="120" cy="160" rx="100" ry="138" fill="url(#vel)" stroke="#E4CF9B" stroke-opacity=".5"/><ellipse cx="120" cy="160" rx="90" ry="128" fill="none" stroke="url(#gg)" stroke-width=".8" stroke-dasharray="2 5"/><text x="120" y="190" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-style="italic" font-size="104" fill="url(#gg)">SM</text><path d="M72 214h96" stroke="url(#gg)" stroke-width=".8"/><text x="120" y="238" text-anchor="middle" font-family="Instrument Sans,sans-serif" font-size="11" letter-spacing="5" fill="#C6A15B">NOUMEN</text><path d="M104 14h32l-16 14z" fill="url(#gg)"/></symbol>
+</defs></svg>
+
+<div id="intro" role="dialog" aria-label="Introduction">
+<button id="sk" class="btn" type="button">Skip introduction</button>
+<div class="bar t"></div><div class="bar b"></div><svg id="clk2" viewBox="-110 -110 220 220" aria-hidden="true"></svg><div class="box"><svg class="bd" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><rect x="0" y="0" width="100" height="100" pathLength="1"/></svg><svg class="crest a" style="--d:.5s" viewBox="0 0 200 260" aria-hidden="true"><use href="#arms"/></svg>
+<div class="plq a" style="--d:1.2s"><b>NOUMEN</b><span class="eb">A private digital collection</span></div>
+<h1 class="a" style="--d:2s">SHAURYA MITTAL</h1>
+<p class="a" style="--d:2.7s;margin:.8rem 0;font-style:italic;color:var(--ch)">Student Developer<br>AI-Assisted Digital Creator</p>
+<p class="eb a" style="--d:3.2s;margin-bottom:1.8rem">Established in the digital age</p>
+<button id="en" class="btn a" style="--d:3.6s" type="button">Enter the collection</button>
+</div></div>
+
+<header>
+<a class="brand" href="#entrance" aria-label="NOUMEN, back to the entrance">NOUMEN</a>
+<div id="hc"><button id="snd" type="button" aria-pressed="false">Sound: off</button><button id="mb" type="button" aria-expanded="false" aria-controls="dir">Directory</button></div>
+<div id="pg" aria-hidden="true"></div>
+</header>
+<nav id="dir" aria-label="Estate directory"><button id="dx" class="btn" type="button">Close</button><ol id="dl"></ol></nav>
+
+<main id="main" tabindex="-1">
+<section id="entrance" class="wal hero" aria-labelledby="h-name">
+<canvas id="gl" aria-hidden="true"></canvas><canvas id="dust" aria-hidden="true"></canvas>
+<div class="in">
+<div class="stamp" aria-hidden="true"><b>NOUMEN</b><span>Lucknow · India</span><span>Est. digital age</span></div><svg id="sun" viewBox="-100 -100 200 200" aria-hidden="true"></svg><div class="hf" id="hf"><svg viewBox="0 0 400 540" role="img" aria-label="Gilded oval portrait frame bearing an engraved SM monogram beneath an arch of laurel"><path class="hl" d="M30 540V210a170 170 0 0 1 340 0V540"/><path class="hl" opacity=".5" d="M50 540V212a150 150 0 0 1 300 0V540"/><g class="ring"><path id="rp" d="M200 270m-190 0a190 190 0 1 1 380 0a190 190 0 1 1-380 0" fill="none"/><text font-family="Special Elite,Courier New,monospace" font-size="13" fill="#C6A15B" textLength="1180" lengthAdjust="spacing"><textPath href="#rp">NOUMEN ✦ A PRIVATE DIGITAL COLLECTION ✦ SHAURYA MITTAL ✦ LUCKNOW ✦ INDEPENDENT DIGITAL CREATION ✦ </textPath></text></g><g id="lau" fill="url(#gg)" opacity=".85"></g><use href="#mono" x="80" y="110" width="240" height="320"/></svg></div>
+<h1 id="h-name">SHAURYA<br>MITTAL</h1>
+<p class="idn">Student Developer · AI-Assisted Digital Creator</p>
+<p class="lead">An independent exploration of technology, digital craftsmanship, creative development and the art of building extraordinary digital experiences.</p>
+<div class="bt"><a class="btn" href="#collection">Explore the collection</a><a class="btn" href="#collaborations">Discover my work</a></div><a class="scrl" href="#author" aria-label="Continue to the author">&#9758;&#xFE0E;</a>
+</div></section>
+
+<div class="mq" aria-hidden="true"><div><span>NOUMEN ✦ A PRIVATE DIGITAL COLLECTION ✦ TWENTY-TWO PLATES ✦ SHAURYA MITTAL ✦ LUCKNOW ✦ NOUMEN ✦ A PRIVATE DIGITAL COLLECTION ✦ TWENTY-TWO PLATES ✦ SHAURYA MITTAL ✦ LUCKNOW ✦ </span><span>NOUMEN ✦ A PRIVATE DIGITAL COLLECTION ✦ TWENTY-TWO PLATES ✦ SHAURYA MITTAL ✦ LUCKNOW ✦ NOUMEN ✦ A PRIVATE DIGITAL COLLECTION ✦ TWENTY-TWO PLATES ✦ SHAURYA MITTAL ✦ LUCKNOW ✦ </span></div></div>
+<section id="author" class="ivo" aria-labelledby="h-author"><div class="in two">
+<figure class="pf rv"><svg viewBox="0 0 240 320" role="img" aria-label="Engraved SM monogram in a gilded oval frame"><use href="#mono"/></svg><figcaption class="eb">Plate I · The monogram</figcaption></figure>
+<div class="bio rv">
+<p class="eb">II · Chapter the first</p>
+<h2 id="h-author">The Author</h2>
+<p class="sub">Shaurya Mittal — Student Developer, AI-Assisted Digital Creator, Lucknow, India.</p>
+<svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+<p>Shaurya Mittal is an independent student developer and AI-assisted digital creator from Lucknow, India.</p>
+<p>His primary interests include building websites, designing digital interfaces, experimenting with browser technologies and exploring the possibilities of artificial intelligence in software development.</p>
+<p>He works on independent digital projects ranging from premium business websites and interactive browser applications to creative experiments and digital experiences. His approach combines independent learning, experimentation, AI-assisted workflows and hands-on project development.</p>
+<p>He aims to develop increasingly sophisticated digital products and establish himself through the quality and functionality of his work.</p>
+<h3 class="eb" style="margin-top:1.6rem">Personal interests</h3>
+<ul class="ints" id="ints"></ul>
+</div></div></section>
+
+<section id="clock" class="wal" aria-labelledby="h-clk"><div class="in two"><div class="rv"><p class="eb">The antique clock</p><h2 id="h-clk">The Antique Clock</h2><p class="sub">Real local time, kept by the estate.</p><p class="lcd" id="cdt"></p></div><figure class="clk rv"><svg id="clk" viewBox="-110 -110 220 220" role="img" aria-label="Antique clock with Roman numerals showing your current local time"></svg></figure></div></section>
+<section id="chronicle" class="par" aria-labelledby="h-chr"><div class="in"><p class="eb">The personal chronicle</p><h2 id="h-chr">The Personal Chronicle</h2><p class="sub">Chapters of an independent creative journey.</p><ol class="chr" id="chr"></ol><p class="note">Dated milestones can be added to the chronicle list in this page’s configuration. Nothing here carries a date until Shaurya supplies one.</p></div></section>
+<section id="collection" class="esp" aria-labelledby="h-col"><div class="in">
+<p class="eb">III · The private collection</p>
+<h2 id="h-col">The Private Collection</h2>
+<p class="sub">A curated archive of digital creation.</p>
+<p style="max-width:60ch;margin-top:1rem;opacity:.85">Twenty-two entries, each shown as a numbered plate. The archive holds projects of different kinds, and not every entry is a client or commercially deployed work. The illustrations are drawn for this catalogue and are not screenshots.</p>
+<p><button id="exb" class="btn" type="button">Exhibition mode</button></p>
+<div class="ctl">
+<div class="fl" id="fl" role="group" aria-label="Filter by category"></div>
+<div><label class="eb" for="q" style="display:block;margin-bottom:.3rem">Search the archive</label><input id="q" type="search" placeholder="Name, category or keyword" autocomplete="off"></div>
+</div>
+<p id="cnt" role="status" aria-live="polite"></p>
+<div id="grid"></div>
+</div></section>
+
+<dialog id="dlg" aria-label="Project details"><div class="dg" id="dgc"></div></dialog>
+<dialog id="exh" aria-label="Exhibition mode"><div class="exv"><div class="exb"><span class="eb" id="exn"></span><div><button class="btn" id="exp" type="button">Previous</button><button class="btn" id="exx" type="button">Next</button><button class="btn" id="exc" type="button">Exit</button></div></div><div class="exm"><div class="art" id="exa"></div><div class="exi"><h3 id="ext"></h3><p style="font-style:italic" id="exg"></p><p id="exd"></p><p class="st" id="exs" style="color:var(--ch)"></p><div class="acts"><a class="btn" id="exl" target="_blank" rel="noopener noreferrer">Open project</a><button class="btn" id="exr" type="button">Load live preview</button></div></div></div><div id="exf"></div></div></dialog>
+
+<section class="bur qt" aria-label="Interlude"><svg id="ch" viewBox="0 0 300 190" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2"></svg>
+<blockquote>The beauty of creation is found in the details.</blockquote><svg id="wv" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true"></svg></section>
+
+<section id="blueprint" aria-labelledby="h-bp"><div class="in"><p class="eb">The architectural blueprint</p><h2 id="h-bp">The Architectural Blueprint</h2><p class="sub">How this very page is built, layer by layer.</p><div class="bpg"><div><ol class="bpl" id="bpl"></ol></div><div><svg id="bpd" viewBox="0 0 300 440" role="img" aria-label="Blueprint of the page: eight stacked layers"></svg><div id="bpt" aria-live="polite"></div></div></div></div></section>
+<section class="plates" aria-label="The estate in numbers"><div class="in"><p class="eb ctr">Counted from this catalogue</p><ul class="stubs"><li><b>22</b><span>Plates in the collection</span></li><li><b>11</b><span>Rooms in the estate</span></li><li><b>6</b><span>Primary technologies</span></li><li><b>3</b><span>Platforms for deployment</span></li><li><b>4</b><span>AI-assisted tools</span></li></ul></div></section>
+<section id="collaborations" class="par" aria-labelledby="h-col2"><div class="in">
+<p class="eb">IV · Ledger of relationships</p>
+<h2 id="h-col2">Selected Collaborations</h2>
+<p class="sub">Only relationships that are supported are named here.</p>
+<svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+<ul class="ldg" id="ldg"></ul>
+<p class="note">Where a relationship is not confirmed, the work appears as a project in the Collection rather than as a client engagement.</p>
+</div></section>
+
+<section id="manifesto" class="bur" aria-labelledby="h-man"><div class="in">
+<p class="eb ctr">V · The manifesto</p>
+<h2 id="h-man" class="ctr">A Philosophy of Craft</h2>
+<ol class="mf" id="mf"></ol>
+</div></section>
+
+<section id="manuscript" class="ivo" aria-labelledby="h-ms"><div class="in"><p class="eb">The digital manuscript</p><h2 id="h-ms">The Digital Manuscript</h2><p class="sub">Handwritten-style notes on design and technique.</p><div class="tabs" role="group" aria-label="Manuscript pages"><button type="button" data-m="p" aria-pressed="true">Design philosophies</button><button type="button" data-m="t" aria-pressed="false">Technical observations</button></div><div class="sheet" id="sheet"></div></div></section>
+<section id="present" class="mar" aria-labelledby="h-pre"><div class="in">
+<p class="eb">VI · The present</p>
+<h2 id="h-pre">The Present</h2>
+<p class="sub">Current interests and ongoing exploration.</p>
+<div class="cols">
+<div><h3>Currently exploring</h3><svg class="orn" aria-hidden="true"><use href="#orn"/></svg><ul class="cat" id="nw1"></ul></div>
+<div><h3>Professional aims</h3><svg class="orn" aria-hidden="true"><use href="#orn"/></svg><ul class="cat" id="nw2"></ul></div>
+</div></div></section>
+
+<section id="journal" class="par" aria-labelledby="h-jou"><div class="in ctr">
+<p class="eb">VII · The journal</p>
+<h2 id="h-jou">The Journal</h2>
+<p class="sub">Notes on technology, design and creation.</p>
+<div class="empty" id="jr"></div>
+</div></section>
+
+<section id="atelier" class="wal" aria-labelledby="h-ate"><div class="in">
+<p class="eb">VIII · The atelier</p>
+<h2 id="h-ate">The Atelier</h2>
+<p class="sub">The place where ideas become digital experiences.</p>
+<ol class="tl" id="tl"></ol>
+</div></section>
+
+<section id="craft" class="bur" aria-labelledby="h-cra"><div class="in">
+<p class="eb">IX · The craft</p>
+<h2 id="h-cra">The Art of Digital Craftsmanship</h2>
+<p class="sub">Areas of interest &amp; development.</p>
+<p class="note">Catalogue entries, not proficiency ratings.</p>
+<div class="cols" id="cr"></div>
+</div></section>
+
+<section id="arms" class="bur" aria-labelledby="h-ar"><div class="in two"><svg class="armsv rv" viewBox="0 0 200 260" role="img" aria-label="NOUMEN coat of arms: a crowned, quartered shield with code brackets, an open book, a radiant sun and an arch, above the motto Functio ante ornamentum"><use href="#arms"/></svg><div class="rv"><p class="eb">The digital coat of arms</p><h2 id="h-ar">The Coat of Arms</h2><p class="sub">An original emblem drawn for NOUMEN.</p><ul class="dl"><li><b>Code brackets.</b> The language of the craft: HTML, CSS and JavaScript.</li><li><b>The open book.</b> The manuscript and the journal: notes kept and shared.</li><li><b>The radiant sun.</b> Canvas and WebGL: light made from mathematics.</li><li><b>The arch.</b> Architecture and structure behind every page.</li><li><b>The motto.</b> <i>Functio ante ornamentum</i>: function before decoration.</li></ul></div></div></section>
+<section id="archive" class="esp" aria-labelledby="h-arc"><div class="in"><p class="eb">The secret archive</p><h2 id="h-arc">The Secret Archive</h2><p class="sub">A locked cabinet of experiments and earlier editions.</p><button id="key" class="btn lock" type="button" aria-expanded="false" aria-controls="arch"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8" cy="8" r="5"/><path d="M12 12l9 9M17 17l3-3"/></svg>Turn the key</button><div id="arch" hidden></div></div></section>
+<section id="colophon" class="ivo" aria-labelledby="h-clo"><div class="in two">
+<div class="rv"><p class="eb">X · The colophon</p><h2 id="h-clo">Colophon</h2><p class="sub">NOUMEN — the digital home of Shaurya Mittal’s development projects, experiments and creative work.</p><svg class="orn" aria-hidden="true"><use href="#orn"/></svg></div>
+<div class="bio rv">
+<p>NOUMEN represents an approach to independent digital creation, where design, development, experimentation and deployment come together.</p>
+<p>It showcases website projects, interactive interfaces, browser-based experiments, creative technology and digital experiences.</p>
+<p style="font-size:.95rem;font-style:italic">Created by Shaurya Mittal as a single HTML file. Set in Cormorant Garamond and Instrument Sans, with system serif fallbacks. Every ornament is drawn in inline SVG. The collection’s illustrations are procedural artwork, not project screenshots.</p>
+</div></div></section>
+
+<section id="guestbook" class="par" aria-labelledby="h-gb"><div class="in"><p class="eb">The visitor’s guestbook</p><h2 id="h-gb">The Guestbook</h2><p class="sub">Write a note. It travels by email to Shaurya.</p><form id="gb" class="gb" novalidate><label>Your name<input id="gbn" maxlength="60" autocomplete="name"></label><label>Your message<textarea id="gbm" rows="5" maxlength="800"></textarea></label><input class="hp" id="gbh" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn" type="submit">Prepare the letter</button><p id="gbs" role="status"></p></form><p class="note">This site has no server, so there is no public wall of messages and nothing is stored. Your email app opens with the letter ready to send. A hidden trap field turns away simple spam bots, and Shaurya reads every message himself.</p></div></section>
+<section id="correspondence" aria-labelledby="h-cor"><div class="in">
+<svg class="env" viewBox="0 0 320 210" role="img" aria-label="Illustrated envelope sealed with an SM wax seal"><rect x="2" y="2" width="316" height="206" fill="#E5D8BF" stroke="url(#gg)" stroke-width="3"/><rect x="10" y="10" width="300" height="190" fill="none" stroke="#967442" stroke-width=".8"/><path d="M2 2L160 118L318 2M2 208L125 105M318 208L195 105" fill="none" stroke="#967442" stroke-width="1"/><circle cx="160" cy="118" r="26" fill="#542532" stroke="#C6A15B" stroke-width="2"/><text x="160" y="128" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="26" fill="#E4CF9B">SM</text></svg>
+<p class="eb">XI · Correspondence</p>
+<h2 id="h-cor">Correspondence</h2>
+<p class="sub" style="margin:auto">A new idea begins with a conversation.</p>
+<svg class="orn" style="margin-inline:auto" aria-hidden="true"><use href="#orn"/></svg>
+<p style="margin-bottom:1rem">Shaurya Mittal</p>
+<a class="mail" id="ml" href="mailto:mittalshaurya66@gmail.com">mittalshaurya66@gmail.com</a>
+<div style="margin-top:1.6rem"><button id="cp" class="btn" type="button">Copy email address</button><p id="cs" role="status" aria-live="polite"></p></div>
+<ul class="soc" id="soc" aria-label="Online presence"></ul>
+</div></section>
+<section id="reliquary" aria-labelledby="h-rel"><div class="in"><p class="eb">The reliquary</p><h2 id="h-rel">The Reliquary</h2><p class="sub" style="margin:auto">An ornamental study in pewter and gold, after Victorian church metalwork. Drawn for this page.</p>
+<div class="rel"><svg class="can" viewBox="0 0 60 200" aria-hidden="true"><circle class="gl2" cx="30" cy="40" r="34" fill="url(#fg)"/><rect x="14" y="62" width="32" height="136" fill="#e9dfc9" stroke="#8a6d3b"/><path class="fl2" d="M30 18c9 12 9 20 0 30-9-10-9-18 0-30z" fill="#ffc45a"/></svg>
+<svg class="cr" viewBox="0 0 300 510" role="img" aria-label="Ornate Victorian-style standing cross in pewter with gold inlay, on a stepped base"><g fill="url(#pew)" stroke="#2c2f31" stroke-width="1.5"><rect x="124" y="60" width="52" height="345"/><rect x="28" y="140" width="244" height="52"/><use href="#fan" transform="translate(150 60)"/><use href="#fan" transform="translate(28 166) rotate(-90)"/><use href="#fan" transform="translate(272 166) rotate(90)"/><use href="#fan" transform="translate(150 405) rotate(180)"/><path d="M118 405h64l14 14h-92zM96 419h108l10 16H86zM76 435h148v46H76zM70 481h160l12 14H58z"/><circle cx="150" cy="166" r="28"/></g><g fill="none" stroke="url(#gg)" stroke-width="1.6"><circle cx="150" cy="166" r="22"/><circle cx="138" cy="166" r="9"/><circle cx="162" cy="166" r="9"/><circle cx="150" cy="154" r="9"/><circle cx="150" cy="178" r="9"/><rect x="131" y="70" width="38" height="326" stroke-dasharray="1 4"/><rect x="36" y="147" width="228" height="38" stroke-dasharray="1 4"/><path d="M82 445h136M82 471h136"/></g><use href="#ro" x="150" y="166"/><use href="#ro" x="150" y="96"/><use href="#ro" x="150" y="118"/><use href="#ro" x="150" y="232"/><use href="#ro" x="150" y="262"/><use href="#ro" x="150" y="292"/><use href="#ro" x="150" y="322"/><use href="#ro" x="150" y="352"/><use href="#ro" x="62" y="166"/><use href="#ro" x="92" y="166"/><use href="#ro" x="208" y="166"/><use href="#ro" x="238" y="166"/><use href="#ro" x="112" y="458"/><use href="#ro" x="150" y="458"/><use href="#ro" x="188" y="458"/></svg>
+<svg class="can" viewBox="0 0 60 200" aria-hidden="true"><circle class="gl2" cx="30" cy="40" r="34" fill="url(#fg)" style="animation-delay:-1s"/><rect x="14" y="62" width="32" height="136" fill="#e9dfc9" stroke="#8a6d3b"/><path class="fl2" style="animation-delay:-.4s" d="M30 18c9 12 9 20 0 30-9-10-9-18 0-30z" fill="#ffc45a"/></svg></div></div></section>
+</main>
+<footer>© Shaurya Mittal · NOUMEN</footer>
+<button id="top" type="button" aria-label="Back to top">↑</button>
+
+<script>
+(()=>{'use strict';
+let sfxPage=()=>{};
+/* ===== 1. CONFIG: edit content here ===== */
+const CFG={
+email:'mittalshaurya66@gmail.com',
+nav:[['entrance','The Entrance'],['author','The Author'],['clock','The Antique Clock'],['chronicle','The Personal Chronicle'],['collection','The Collection'],['blueprint','The Architectural Blueprint'],['collaborations','Selected Collaborations'],['manifesto','The Manifesto'],['manuscript','The Digital Manuscript'],['present','The Present'],['journal','The Journal'],['atelier','The Atelier'],['craft','The Craft'],['arms','The Coat of Arms'],['archive','The Secret Archive'],['colophon','The Colophon'],['guestbook','The Guestbook'],['correspondence','Correspondence'],['reliquary','The Reliquary']],
+groups:{b:'Brand & Business',t:'Tools & Apps',i:'Interfaces',e:'Experiences',h:'Heritage & Culture'},
+interests:['Full-stack web development','HTML5','CSS','JavaScript','Artificial Intelligence','AI-assisted software development','Website architecture','Digital product creation','UI/UX design','Creative coding','WebGL','Canvas graphics','Interactive browser experiences','Entrepreneurship','Technology and innovation'],
+manifesto:['Build meaningful digital experiences.','Functionality before decoration.','Clarity before complexity.','Performance is part of design.','Originality matters.','Every interaction should have a purpose.','Continuous improvement is essential.'],
+now:{exploring:['AI-assisted software development','WebGL, Canvas and GLSL procedural graphics','Single-file website architecture','Browser-based applications and interactive interfaces','Premium business websites'],aims:['Build a strong development portfolio','Develop real-world project experience','Work with businesses and organisations','Improve technical capabilities','Explore professional development roles']},
+journal:[],
+atelier:[['Research','Understand the purpose and requirements.'],['Planning','Define structure, functionality and architecture.'],['Art direction','Establish typography, colour, visual hierarchy and the overall design language.'],['Development','Implement HTML, CSS, JavaScript and suitable browser technologies.'],['Interaction','Develop animations, interactions and useful functionality.'],['Refinement','Improve responsiveness, usability and performance.'],['Testing','Check functionality and compatibility.'],['Deployment','Publish through GitHub Pages or Vercel.']],
+craft:[['Primary technologies',['HTML5','CSS3','JavaScript','HTML Canvas','WebGL','GLSL Shaders']],['Development areas',['Responsive web development','Single-file website architecture','Interactive UI development','Browser-based applications','Procedural graphics','Animation systems','Custom interface design','Website optimisation','Frontend engineering','Digital art direction']],['Development and deployment',['GitHub','GitHub Pages','Vercel']],['AI-assisted development tools',['ChatGPT','Claude','Google Gemini','Replit']]],
+socials:[['GitHub','https://github.com/shaurya1233'],['Instagram','https://www.instagram.com/shaurya_mittal31/'],['LeetCode','https://leetcode.com/u/Qlk0uRwuTh/'],['Mastodon','https://mastodon.social/@shaurya_dev'],['CodePen','https://codepen.io/SHAURYA-MITTAL-the-bashful'],['Bluesky','https://bsky.app/profile/mittalshaurya66-06.bsky.social']],
+/* [name, category, group, description, url, extras] */
+projects:[
+['MITTAL RESERVE','Brand / Café','b','A premium coffee brand website with an editorial visual direction.','https://shaurya1233.github.io/Mittal-Reserve./'],
+['AUREX UNIVERSAL CALCULATOR','Browser-based tool','t','A multi-mode calculator interface with numerous calculation modules.','https://shaurya1233.github.io/AUREX-MITTAL-CALCULATOR/',{concept:'Multiple modes · responsive · INR-oriented · offline-oriented'}],
+['MITTAL RESERVE — THE PRIVATE PALAZZO','Luxury website','e','An Italian palazzo-inspired luxury digital experience.','https://mittal-reserve.vercel.app/',{concept:'Arrival, rooms, gallery, garden, salon, archive',alt:['Project archive','https://shaurya1233.github.io/NOUMEN/projects/mittal-reserve/']}],
+['SHAURYA OS — WINDOWS 11 STYLE','Interactive interface','i','A browser-based desktop environment inspired by Windows 11.','https://shaurya1233.github.io/WINDOWS-11-Ultimate/'],
+['OBSIDIAN DEVELOPERS','Brand / Development','b','An independent developer brand website.','https://obsidian-developers.vercel.app/'],
+['SZS ETHEREAL','Digital experience','e','An atmospheric website with storytelling and visual presentation.','https://shaurya1233.github.io/szs-ethereal-Saanvi-/'],
+['SHAURYA MUZAFFARNAGAR','Digital experience','e','A visually immersive website focused on relaxation and atmosphere.','https://shaurya-muzaffarnagar.vercel.app/'],
+['NOIR RESERVE','Café / Brand concept','b','A dark editorial café and coffee brand concept.',null,{pending:1}],
+['SHAURYA SHATRANJ','Browser game','t','An offline-capable chess experience.','https://shaurya1233.github.io/SHAURYA-SHATRANJ/'],
+['ETERNAL SOULS','Tribute website','h','A personalised tribute and storytelling experience.','https://eternal-souls.vercel.app/'],
+['EYEKON — PRECISION IN VISION','Client project','b','An eyewear and optical brand website.','https://shaurya1233.github.io/EYEKON-Precision-In-Vision/',{rel:'Listed as a client project'}],
+['BMW INDIA','Automotive concept','b','An independent automotive dealership website concept.','https://shaurya1233.github.io/BMW-INDIA/',{rel:'Independent concept. No official BMW affiliation is implied.'}],
+['ETERNAL IMPACT','Social impact','h','A donation-focused digital experience.','https://shaurya1233.github.io/shaurya-x-saanvi-eternal-impact./'],
+['BHARAT REMEMBERED','Heritage / Memorial','h','An Independence Day memorial project honouring fallen soldiers.','https://shaurya1233.github.io/SHAURYA-MITTAL-BHARAT-REMEMBERED-MEMORIAL./'],
+['TRUCK SAATHI','Web application','t','A digital platform designed to help truck drivers, including multilingual support.','https://truck-saathi-mittal.vercel.app/'],
+['L’ÉTOILE DORÉE','Restaurant website','b','A refined restaurant website concept with premium editorial styling.','https://shaurya1233.github.io/restaurant-redesign-by-master-shaurya/'],
+['SHAURYA OS — WINDOWS XP STYLE','Interactive interface','i','A retro desktop experience inspired by Windows XP.','https://shaurya1233.github.io/szs/'],
+['SHAURYA AETERNA','Digital sanctuary','e','An atmospheric digital experience with visual effects and animation.','https://shaurya1233.github.io/shaurya-aeterna/'],
+['SANATANA — THE LIVING DHARMA','Culture / Educational','h','A website focused on Hindu culture and spiritual subjects.','https://shaurya1233.github.io/SHAURYA./'],
+['SHAURYA MITTAL — MAIN PORTFOLIO','Personal portfolio','e','A personal portfolio website.','https://shaurya1233.github.io/Shaurya-Portfolio.../'],
+['MATTER UNIVERSE','Creative portfolio','e','A digital portfolio experiment based on moving geometry.','https://shaurya-matter-universe.vercel.app/'],
+['ASHIRWAD SANITARY & TILES','Business / Client project','b','A retail website for tiles, sanitaryware and bathroom fittings.','https://shaurya1233.github.io/mittal-ashirwad-sanitary-tiles/',{rel:'Listed as a client project'}]
+]};
+/* ===== 2. HELPERS ===== */
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const rom=n=>{let r='';[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']].forEach(([v,s])=>{while(n>=v){r+=s;n-=v}});return r};
+const pad=n=>String(n).padStart(2,'0');
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const ext='target="_blank" rel="noopener noreferrer"';
+/* ===== 3. STATIC CONTENT ===== */
+$('#dl').innerHTML=CFG.nav.map(([id,t],i)=>`<li><a href="#${id}"><i>${rom(i+1)}.</i>${t}</a></li>`).join('');
+$('#ints').innerHTML=CFG.interests.map(t=>`<li>${t}</li>`).join('');
+$('#mf').innerHTML=CFG.manifesto.map((t,i)=>`<li class="rv"><small>${rom(i+1)}</small>${t}</li>`).join('');
+$('#nw1').innerHTML=CFG.now.exploring.map(t=>`<li>${t}</li>`).join('');
+$('#nw2').innerHTML=CFG.now.aims.map(t=>`<li>${t}</li>`).join('');
+$('#tl').innerHTML=CFG.atelier.map(([h,t],i)=>`<li class="rv"><b>${rom(i+1)}</b><div><h3>${h}</h3><p>${t}</p></div></li>`).join('');
+$('#cr').innerHTML=CFG.craft.map(([h,a])=>`<div class="rv"><h3>${h}</h3><svg class="orn" aria-hidden="true"><use href="#orn"/></svg><ul class="cat">${a.map(t=>`<li>${t}</li>`).join('')}</ul></div>`).join('');
+$('#soc').innerHTML=CFG.socials.map(([n,u])=>`<li><a href="${u}" ${ext} aria-label="${n} (opens in a new tab)">${n} ↗</a></li>`).join('');
+$('#jr').innerHTML=CFG.journal.length?'':'<h3>The first entries are still being written.</h3><svg class="orn" style="margin-inline:auto" aria-hidden="true"><use href="#orn"/></svg><p>Notes on technology, design and creation will be filed here when they are ready.</p>';
+$('#ldg').innerHTML=CFG.projects.map((p,i)=>[p,i]).filter(([p])=>p[5]&&p[5].rel).map(([p,i])=>`<li class="rv"><div><span class="eb">Nº ${pad(i+1)} · ${p[1]}</span><h3>${p[0]}</h3></div><p>${p[5].rel}</p><a class="btn" href="${p[4]}" ${ext}>Visit project</a></li>`).join('');
+/* laurel + chandelier ornaments */
+(()=>{let s='';for(const d of[1,-1])for(let k=0;k<10;k++){const t=Math.PI*(.1+k*.075),x=200+d*125*Math.sin(t),y=270+163*Math.cos(t),a=Math.atan2(-163*Math.sin(t),d*125*Math.cos(t))*180/Math.PI-90;s+=`<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="3.6" ry="10" transform="rotate(${a.toFixed(1)} ${x.toFixed(1)} ${y.toFixed(1)})"/>`}$('#lau').innerHTML=s;
+let c='<path d="M150 0V60M138 60h24M130 70q20 14 40 0"/>';for(let k=-3;k<=3;k++){const x=150+k*40,y=108+Math.abs(k)*6;c+=`<path d="M150 70Q${150+k*18} ${96} ${x} ${y}"/><path d="M${x-7} ${y}h14"/><path d="M${x} ${y}v10" stroke-width=".8"/><ellipse cx="${x}" cy="${y+18}" rx="3" ry="7"/><ellipse cx="${x}" cy="${y+36}" rx="2.4" ry="5" opacity=".7"/>`}$('#ch').innerHTML=c})();
+/* ===== 4. COLLECTION ===== */
+const art=(g,n)=>{const v=n%3;let s='';
+if(g==='b')s=`<path d="M60 150V70a40 40 0 0 1 80 0v80M72 150V72a28 28 0 0 1 56 0v78M40 150h120"/><path d="M${80-v*6} 100h${40+v*12}M${80-v*6} 112h${40+v*12}"/>`;
+else if(g==='t'){for(let i=0;i<12;i++){const a=i*Math.PI/6;s+=`<path d="M${100+34*Math.cos(a)} ${78+34*Math.sin(a)}L${100+42*Math.cos(a)} ${78+42*Math.sin(a)}"/>`}s+=`<circle cx="100" cy="78" r="46"/><circle cx="100" cy="78" r="${14+v*3}"/><path d="M100 78L${118+v*4} 58"/><path d="M52 138h96"/>`}
+else if(g==='i')s=`<rect x="36" y="30" width="100" height="70"/><rect x="${52+v*8}" y="48" width="100" height="70"/><rect x="${68+v*8}" y="66" width="96" height="62"/><path d="M${68+v*8} 78h96M${76+v*8} 72h6"/>`;
+else if(g==='e'){for(let i=0;i<4+v;i++)s+=`<circle cx="${70+i*14}" cy="78" r="${18+i*9}" opacity="${1-i*.14}"/>`;s+='<path d="M20 78h160" opacity=".4"/>'}
+else s=`<path d="M40 56L100 30l60 26zM46 62h108M52 128h96M40 140h120"/><path d="M60 66v62M84 66v62M116 66v62M140 66v62"/>${v?'<circle cx="100" cy="46" r="5"/>':''}`;
+return `<svg viewBox="0 0 200 160" fill="none" stroke="url(#gg)" stroke-width="1.3" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Procedural catalogue illustration, not a screenshot"><rect width="200" height="160" fill="${['#24180F','#401B25','#17100B'][v]}" stroke="none"/><rect x="8" y="8" width="184" height="144" stroke-width=".7" opacity=".6"/><rect x="8" y="8" width="184" height="144" fill="url(#hat)" stroke="none"/>${s}</svg>`};
+const st=p=>p[5]&&p[5].pending?'Live link pending':p[5]&&p[5].rel?p[5].rel:'Link provided';
+let F='all',Q='';
+const flHTML=[['all','All']].concat(Object.entries(CFG.groups)).map(([k,l])=>`<button type="button" data-f="${k}" aria-pressed="${k==='all'}">${l}</button>`).join('');
+$('#fl').innerHTML=flHTML;
+function card(p,i,k){const x=p[5]||{};return `<article class="card${k%5===0?' w':''}"><div class="art">${art(p[2],i+1)}<span class="n">Nº ${pad(i+1)}</span></div><div class="lab"><span class="no">NM-0${pad(i+1)} · PLATE ${rom(i+1)}</span><h3>${p[0]}</h3><p class="ct">${p[1]}</p><p>${p[3]}</p><p class="st">${st(p)}</p><div class="acts">${p[4]?`<a class="btn" href="${p[4]}" ${ext} aria-label="Visit ${esc(p[0])} (opens in a new tab)">Visit project</a>`:''}<button class="btn" type="button" data-i="${i}">Details</button></div></div></article>`}
+function render(){const q=Q.trim().toLowerCase();const L=CFG.projects.map((p,i)=>[p,i]).filter(([p])=>(F==='all'||p[2]===F)&&(!q||(p[0]+' '+p[1]+' '+p[3]+' '+CFG.groups[p[2]]).toLowerCase().includes(q)));
+$('#grid').innerHTML=L.length?L.map(([p,i],k)=>card(p,i,k)).join(''):'<p class="none">No plates match. Clear the search or choose another category.</p>';
+$('#cnt').textContent=`Showing ${L.length} of ${CFG.projects.length} entries`}
+$('#fl').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;F=b.dataset.f;$$('#fl button').forEach(x=>x.setAttribute('aria-pressed',x===b));render()});
+$('#q').addEventListener('input',e=>{Q=e.target.value;render()});
+const dlg=$('#dlg');
+$('#grid').addEventListener('click',e=>{const b=e.target.closest('[data-i]');if(!b)return;const i=+b.dataset.i,p=CFG.projects[i],x=p[5]||{};
+$('#dgc').innerHTML=`<button class="btn x" type="button" id="dc">Close</button><p class="eb">Plate Nº ${pad(i+1)} · ${CFG.groups[p[2]]}</p><h3>${p[0]}</h3><p style="font-style:italic;color:var(--bz)">${p[1]}</p><div class="art" style="margin-top:1rem">${art(p[2],i+1)}</div><p>${p[3]}</p>${x.concept?`<p><b>Concept:</b> ${x.concept}</p>`:''}<p class="st">${st(p)}</p><div class="acts">${p[4]?`<a class="btn" href="${p[4]}" ${ext}>Visit project</a>`:'<span class="st">No link has been supplied yet.</span>'}${x.alt?`<a class="btn" href="${x.alt[1]}" ${ext}>${x.alt[0]}</a>`:''}</div><p class="note" style="font-size:.9rem">Illustration drawn for this catalogue. It is not a screenshot of the project.</p>`;
+typeof dlg.showModal==='function'?dlg.showModal():dlg.setAttribute('open','');$('#dc').addEventListener('click',()=>dlg.close?dlg.close():dlg.removeAttribute('open'))});
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+render();
+/* ===== 5. NAVIGATION, INTRO, SCROLL ===== */
+const dir=$('#dir'),mb=$('#mb');
+function menu(o,back=true){dir.classList.toggle('open',o);mb.setAttribute('aria-expanded',o);document.body.classList.toggle('lock',o);if(o)$('a',dir).focus();else if(back)mb.focus()}
+mb.addEventListener('click',()=>menu(!dir.classList.contains('open')));
+$('#dx').addEventListener('click',()=>menu(false));
+dir.addEventListener('click',e=>{if(e.target.closest('a'))menu(false,false)});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&dir.classList.contains('open'))menu(false)});
+const intro=$('#intro');
+function enter(){if(!intro.isConnected)return;intro.classList.add('out');document.body.classList.remove('lock');setTimeout(()=>intro.remove(),2000);sfxPage()}
+$('#en').addEventListener('click',enter);$('#sk').addEventListener('click',enter);
+if(location.hash)enter();
+const pg=$('#pg'),top=$('#top');let tk=0;
+function onScroll(){tk=0;const h=document.documentElement,m=h.scrollHeight-h.clientHeight;pg.style.transform=`scaleX(${m>0?Math.min(1,scrollY/m):0})`;top.classList.toggle('on',scrollY>900);rvs()}
+addEventListener('scroll',()=>{if(!tk)tk=requestAnimationFrame(onScroll)},{passive:true});onScroll();
+top.addEventListener('click',()=>scrollTo({top:0,behavior:RM?'auto':'smooth'}));
+$$('h2,.mf li').forEach(e=>e.classList.add('rv','wipe'));function rvs(){const h=innerHeight*.94;$$('.rv:not(.on)').forEach(el=>{if(RM||el.getBoundingClientRect().top<h)el.classList.add('on')})}addEventListener('resize',rvs);addEventListener('load',rvs);rvs();setTimeout(rvs,400);
+/* ===== 6. CONTACT ===== */
+$('#cp').addEventListener('click',async()=>{const s=$('#cs');let ok=false;try{await navigator.clipboard.writeText(CFG.email);ok=true}catch(_){try{const t=document.createElement('textarea');t.value=CFG.email;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();ok=document.execCommand('copy');t.remove()}catch(__){}}
+s.textContent=ok?'Address copied to the clipboard.':'Copying was blocked. Select the address above instead.';setTimeout(()=>s.textContent='',4000)});
+/* ===== 7. ATMOSPHERE: dust canvas with adaptive quality ===== */
+const hero=$('#entrance'),cv=$('#dust'),ctx=cv.getContext&&cv.getContext('2d'),hf=$('#hf');
+let tier=RM||!ctx?0:(navigator.hardwareConcurrency>=8&&devicePixelRatio>=1.5&&innerWidth>900?2:1);
+const N=[0,24,54];let P=[],raf=0,seen=true,last=0,slow=0;
+const seed=()=>{P=Array.from({length:N[tier]},()=>({x:Math.random(),y:Math.random(),r:Math.random()*1.5+.4,v:Math.random()*4e-5+1e-5,a:Math.random()*.5+.15}))};
+const size=()=>{if(!ctx)return;const d=Math.min(devicePixelRatio||1,tier===2?2:1.5);cv.width=cv.clientWidth*d;cv.height=cv.clientHeight*d;cv.d=d};
+function loop(t){raf=0;if(!seen||document.hidden||!tier)return;const dt=Math.min(t-last,100);last=t;slow=dt>40?slow+1:Math.max(0,slow-1);
+if(slow>45){tier--;slow=0;seed();if(!tier){ctx.clearRect(0,0,cv.width,cv.height);return}}
+ctx.clearRect(0,0,cv.width,cv.height);ctx.fillStyle='#E4CF9B';
+for(const p of P){p.y-=p.v*dt;p.x+=Math.sin(t/4000+p.y*6)*4e-5*dt;if(p.y<0){p.y=1;p.x=Math.random()}ctx.globalAlpha=p.a;ctx.beginPath();ctx.arc(p.x*cv.width,p.y*cv.height,p.r*cv.d,0,6.283);ctx.fill()}
+raf=requestAnimationFrame(loop)}
+const go=()=>{if(tier&&seen&&!document.hidden&&!raf){last=performance.now();raf=requestAnimationFrame(loop)}};
+if(tier){size();seed();let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(size,200)});document.addEventListener('visibilitychange',go);
+if('IntersectionObserver'in window)new IntersectionObserver(([e])=>{seen=e.isIntersecting;go()}).observe(hero);go();
+addEventListener('pagehide',()=>{cancelAnimationFrame(raf);raf=0})}
+if(!RM&&matchMedia('(pointer:fine)').matches){let q=0,tx=0,ty=0;hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();tx=(e.clientX/r.width-.5)*12;hero.style.setProperty('--mx',(e.clientX-r.left)+'px');hero.style.setProperty('--my',(e.clientY-r.top)+'px');ty=(e.clientY/r.height-.5)*8;if(!q)q=requestAnimationFrame(()=>{q=0;hf.style.transform=`translate(${tx}px,${ty}px)`})})}
+/* ===== 8. DECOR: engraved sunburst, torn page edges ===== */
+{let a='';for(let i=0;i<120;i++){const t=i*Math.PI/60,l=i%2?100:78;a+=`<path d="M${(34*Math.cos(t)).toFixed(1)} ${(34*Math.sin(t)).toFixed(1)}L${(l*Math.cos(t)).toFixed(1)} ${(l*Math.sin(t)).toFixed(1)}"/>`}$('#sun').innerHTML=a;
+const j=()=>Math.random()*15|0;$$('main>section').slice(1).forEach(el=>{const p=[`0 ${j()}px`];for(let x=2;x<100;x+=2)p.push(`${x}% ${j()}px`);p.push(`100% ${j()}px`,'100% 100%','0 100%');el.style.clipPath=`polygon(${p.join(',')})`})}
+/* ===== 9. WEBGL: drifting golden light behind the hero ===== */
+(()=>{const c=$('#gl');if(!c||RM)return;const gl=c.getContext('webgl',{antialias:false,powerPreference:'low-power'});if(!gl){c.remove();return}
+const VS='attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+const FS=`#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+uniform vec2 r;uniform float t;
+float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1.,0.)),f.x),mix(h(i+vec2(0.,1.)),h(i+vec2(1.,1.)),f.x),f.y);}
+float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*n(p);p=p*2.03+vec2(1.7,9.2);a*=.5;}return v;}
+void main(){vec2 q=(gl_FragCoord.xy-.5*r)/r.y;float k=fbm(q*2.4+vec2(0.,t*.03));float w=fbm(q*3.+k*1.6+vec2(t*.05,-t*.02));float g=smoothstep(.35,.95,w)*(1.-length(q)*.9);
+vec3 col=mix(vec3(.09,.06,.04),vec3(.78,.6,.33),g*.5)+vec3(.6,.4,.2)*pow(max(0.,1.-length(q-vec2(0.,.12))*1.6),3.)*.35;gl_FragColor=vec4(col,1.);}`;
+const mk=(y,s)=>{const o=gl.createShader(y);gl.shaderSource(o,s);gl.compileShader(o);return gl.getShaderParameter(o,gl.COMPILE_STATUS)?o:null};
+const v=mk(gl.VERTEX_SHADER,VS),f=mk(gl.FRAGMENT_SHADER,FS);if(!v||!f){c.remove();return}
+const pr=gl.createProgram();gl.attachShader(pr,v);gl.attachShader(pr,f);gl.linkProgram(pr);if(!gl.getProgramParameter(pr,gl.LINK_STATUS)){c.remove();return}
+gl.useProgram(pr);gl.bindBuffer(gl.ARRAY_BUFFER,gl.createBuffer());gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+const L=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(L);gl.vertexAttribPointer(L,2,gl.FLOAT,false,0,0);
+const ur=gl.getUniformLocation(pr,'r'),ut=gl.getUniformLocation(pr,'t');let id=0,on=true,pt=0,sl=0;const t0=performance.now();
+const fit=()=>{const k=Math.min(devicePixelRatio||1,1.5)*(tier===2?.8:.5);c.width=Math.max(2,c.clientWidth*k|0);c.height=Math.max(2,c.clientHeight*k|0);gl.viewport(0,0,c.width,c.height)};
+function stop(){cancelAnimationFrame(id);id=0;on=false;c.style.display='none'}
+function draw(n){id=0;if(!on||document.hidden)return;const d=n-pt;pt=n;sl=d>50?sl+1:Math.max(0,sl-1);if(sl>60){stop();return}
+gl.uniform2f(ur,c.width,c.height);gl.uniform1f(ut,(n-t0)/1000);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);id=requestAnimationFrame(draw)}
+const go=()=>{if(!id&&on&&!document.hidden){pt=performance.now();id=requestAnimationFrame(draw)}};
+fit();go();let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(on)fit()},200)});
+document.addEventListener('visibilitychange',go);c.addEventListener('webglcontextlost',e=>{e.preventDefault();stop()});
+if('IntersectionObserver'in window)new IntersectionObserver(([e])=>{if(c.style.display==='none')return;on=e.isIntersecting;go()}).observe(hero);
+addEventListener('pagehide',()=>{cancelAnimationFrame(id);id=0;const x=gl.getExtension('WEBGL_lose_context');x&&x.loseContext()})})();
+/* ===== 10. ENGRAVED SEA ===== */
+{let h='';for(let k=0;k<16;k++){const y=36+k*10;let d=`M-60 ${y}`;for(let x=-60;x<=1300;x+=20)d+=`L${x} ${(y+Math.sin(x/70+k*.6)*(9+k*1.2)).toFixed(1)}`;h+=`<path d="${d}L1300 230L-60 230Z" style="animation-delay:${(-k*.5).toFixed(1)}s"/>`}$('#wv').innerHTML=h}
+/* ===== 11. NEW ROOMS ===== */
+$('#chr').innerHTML=[['I','Learning on his own','Independent learning, experimentation and hands-on project development form the core of his approach.'],['II','Websites and interfaces','Premium business websites, interactive browser applications and creative experiments fill the archive.'],['III','NOUMEN','The personal portfolio and creative development archive, published at shaurya1233.github.io/NOUMEN.'],['IV','The next chapter','Increasingly sophisticated digital products, judged by the quality and functionality of the work.']].map(([n,t,x])=>`<li class="rv"><span class="eb">Chapter ${n}</span><h3>${t}</h3><p>${x}</p></li>`).join('');
+{let l='';for(const d of[1,-1])for(let k=0;k<10;k++){const t=k/9,x=100+d*(70+Math.sin(t*2.6)*20),y=218-t*140;l+=`<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="3.6" ry="8" transform="rotate(${(d*(20+t*60)).toFixed(0)} ${x.toFixed(1)} ${y.toFixed(1)})"/>`}$('#arl').innerHTML=l}
+/* clock */
+const clocks=[];
+function clock(svg,full){let h='<circle r="106" fill="url(#gg)"/><circle r="99" fill="#1b0d0a"/><circle r="95" fill="url(#ivf)"/>';
+for(let i=0;i<60;i++){const a=i*Math.PI/30,l=i%5?91:85;h+=`<path d="M${(95*Math.sin(a)).toFixed(1)} ${(-95*Math.cos(a)).toFixed(1)}L${(l*Math.sin(a)).toFixed(1)} ${(-l*Math.cos(a)).toFixed(1)}" stroke="#2a1d12" stroke-width="${i%5?.6:1.6}"/>`}
+if(full)for(let i=1;i<=12;i++){const a=i*Math.PI/6;h+=`<text x="${(70*Math.sin(a)).toFixed(1)}" y="${(-70*Math.cos(a)).toFixed(1)}" text-anchor="middle" dominant-baseline="central" font-family="Playfair Display,Georgia,serif" font-weight="900" font-size="15" fill="#2a1d12">${rom(i)}</text>`}
+h+='<g class="hh"><path d="M0 10L-3 4L-5-10Q-9-24 0-54Q9-24 5-10L3 4Z" fill="#1b0d0a" stroke="#967442"/></g><g class="mh"><path d="M0 12L-2.5 4L-2-20L0-82L2-20L2.5 4Z" fill="#1b0d0a" stroke="#967442" stroke-width=".6"/></g><g class="sh"><path d="M0 20V-86" stroke="#C8692B" stroke-width="1.1"/><circle r="3.6" fill="#C8692B"/></g><circle r="5" fill="url(#gg)"/>';
+svg.innerHTML=h;clocks.push(svg)}
+function tickClocks(){const d=new Date(),s=d.getSeconds()+d.getMilliseconds()/1e3,m=d.getMinutes()+s/60,h=d.getHours()%12+m/60;
+clocks.forEach(v=>{$('.hh',v).setAttribute('transform',`rotate(${h*30})`);$('.mh',v).setAttribute('transform',`rotate(${m*6})`);$('.sh',v).setAttribute('transform',`rotate(${s*6})`)});
+const c=$('#cdt');if(c)c.innerHTML=`${d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'})}<br>${d.toLocaleDateString([],{weekday:'long',day:'numeric',month:'long',year:'numeric'})}<br>${Intl.DateTimeFormat().resolvedOptions().timeZone||''}`}
+clock($('#clk'),true);clock($('#clk2'),false);tickClocks();setInterval(()=>{if(!document.hidden)tickClocks()},250);
+/* intro motes */
+for(let i=0;i<26;i++){const m=document.createElement('i');m.className='mote';m.style.cssText=`left:${Math.random()*100}%;top:${30+Math.random()*65}%;animation-delay:${(-Math.random()*9).toFixed(1)}s;animation-duration:${(7+Math.random()*6).toFixed(1)}s`;intro.appendChild(m)}
+/* blueprint */
+{const B=[['HTML5','One main element holding semantic sections, landmarks and headings. Every directory link leads to a real section.'],['CSS3','Design tokens as CSS variables: gold, walnut, burgundy, ivory, navy, copper and forest rooms. Grain, vignette and torn edges are drawn in CSS and SVG.'],['SVG','The monogram, coat of arms, clock, ornaments and cross are inline SVG, reused across the page.'],['JavaScript','A single configuration object holds the projects, links, notes and chapters. Every list on the page is rendered from it.'],['Canvas 2D','Golden dust drifting in the hero. It adapts to the device and stops when the hero is out of view.'],['WebGL · GLSL','A fragment shader paints drifting golden light behind the hero. Its resolution scales to the device and it switches itself off if frames run slow.'],['Web Audio','Optional synthesised clock tick and page-turn sounds. Off until the visitor switches them on, with no audio files.'],['Deployment','One index.html with no build step, ready for GitHub Pages or Vercel.']];
+$('#bpl').innerHTML=B.map(([n],i)=>`<li><button type="button" data-b="${i}" aria-pressed="${i===0}">${rom(i+1)}. ${n}</button></li>`).join('');
+$('#bpd').innerHTML=B.map(([n],i)=>`<g><rect class="bpr" data-b="${i}" x="30" y="${10+i*52}" width="240" height="42"/><text x="150" y="${36+i*52}">${rom(i+1)} · ${n}</text></g>`).join('')+'<path d="M12 10V430M8 14l4-6 4 6M8 426l4 6 4-6" stroke="#cfe3ff" fill="none"/>';
+const sel=i=>{$$('#bpl button').forEach((b,k)=>b.setAttribute('aria-pressed',k===i));$$('.bpr').forEach((r,k)=>r.classList.toggle('on',k===i));$('#bpt').innerHTML=`<h3>${rom(i+1)}. ${B[i][0]}</h3><p>${B[i][1]}</p>`;sfxPage()};
+document.addEventListener('click',e=>{const t=e.target.closest('[data-b]');if(t)sel(+t.dataset.b)});sel(0)}
+/* manuscript */
+{const M={p:['Function before decoration.','Clarity before complexity.','Performance matters.','Honest representation matters.','Responsive design is essential.','Every interaction should have a purpose.','Continuous improvement is important.'],t:['One document: HTML, CSS and JavaScript together in a single file.','Canvas and WebGL with GLSL shaders for procedural artwork.','Published through GitHub Pages and Vercel.','Independent learning alongside AI-assisted workflows and hands-on building.']};
+const show=k=>{const sh=$('#sheet');sh.innerHTML='<ul class="notes">'+M[k].map((t,i)=>`<li style="transform:rotate(${(i%3-1)*.6}deg)">${t}</li>`).join('')+'</ul>';sh.classList.remove('flip');void sh.offsetWidth;if(!RM)sh.classList.add('flip');$$('.tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===k))};
+$('.tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b){show(b.dataset.m);sfxPage()}});show('p')}
+/* secret archive */
+{const PR=CFG.projects;$('#key').addEventListener('click',()=>{const a=$('#arch'),o=a.hidden;a.hidden=!o;$('#key').setAttribute('aria-expanded',o);sfxPage();if(o)a.innerHTML='<h3>Experiments</h3><ul>'+[20,16,3,17,5,8].map(i=>`<li><a href="${PR[i][4]}" ${ext}>${PR[i][0]}</a> · <i>${PR[i][1]}</i></li>`).join('')+'</ul><h3>Historical notes</h3><ul><li>An earlier edition of NOUMEN was dark luxury: black and antique gold, vintage editorial atmosphere, Cormorant Garamond with Instrument Sans.</li><li>That edition used hash-based navigation across eleven sections, with procedural WebGL artwork and an optional ambient audio layer.</li><li>This edition is the Golden Heritage rebuild.</li></ul>'})}
+/* guestbook: a real letter by email */
+$('#gb').addEventListener('submit',e=>{e.preventDefault();const st=$('#gbs');if($('#gbh').value){return}const n=$('#gbn').value.trim(),m=$('#gbm').value.trim();if(m.length<5){st.textContent='Please write at least a few words.';return}
+st.textContent='Opening your email app with the letter ready…';location.href='mailto:'+CFG.email+'?subject='+encodeURIComponent('NOUMEN guestbook'+(n?' — '+n:''))+'&body='+encodeURIComponent(m+(n?'\n\n— '+n:''))});
+/* exhibition mode */
+{const PR=CFG.projects,x=$('#exh');let i=0;const sh=k=>{i=(k+PR.length)%PR.length;const p=PR[i],y=p[5]||{};$('#exn').textContent=`Plate ${i+1} of ${PR.length}`;$('#exa').innerHTML=art(p[2],i+1);$('#ext').innerHTML=p[0];$('#exg').textContent=p[1];$('#exd').textContent=p[3];$('#exs').textContent=st(p);$('#exf').innerHTML='';const l=$('#exl'),r=$('#exr');if(p[4]){l.href=p[4];l.hidden=false;r.hidden=false}else{l.hidden=true;r.hidden=true}sfxPage()};
+$('#exb').addEventListener('click',()=>{sh(0);typeof x.showModal==='function'?x.showModal():x.setAttribute('open','');if(x.requestFullscreen)x.requestFullscreen().catch(()=>{})});
+$('#exp').addEventListener('click',()=>sh(i-1));$('#exx').addEventListener('click',()=>sh(i+1));
+$('#exc').addEventListener('click',()=>{if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});x.close()});
+$('#exr').addEventListener('click',()=>{const u=PR[i][4];$('#exf').innerHTML=`<iframe src="${u}" title="Live preview of ${esc(PR[i][0])}" sandbox="allow-scripts allow-same-origin allow-forms" referrerpolicy="no-referrer" loading="lazy"></iframe><p class="note">If the preview stays blank, the site may refuse embedding. Use Open project instead.</p>`});
+x.addEventListener('keydown',e=>{if(e.key==='ArrowRight')sh(i+1);if(e.key==='ArrowLeft')sh(i-1)});
+x.addEventListener('close',()=>{if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})})}
+/* heritage soundscape: synthesised, opt-in, never autoplay */
+{const b=$('#snd');let ac,iv,on=false;
+const nz=(d,fq,ty,g,dl=0)=>{const n=ac.createBuffer(1,ac.sampleRate*d|0,ac.sampleRate),a=n.getChannelData(0);for(let i=0;i<a.length;i++)a[i]=(Math.random()*2-1)*(1-i/a.length);const s=ac.createBufferSource(),f=ac.createBiquadFilter(),v=ac.createGain();s.buffer=n;f.type=ty;f.frequency.value=fq;v.gain.value=g;s.connect(f);f.connect(v);v.connect(ac.destination);s.start(ac.currentTime+dl)};
+const tk=()=>{nz(.05,2400,'highpass',.12);nz(.03,1800,'highpass',.07,.5)};
+sfxPage=()=>{if(on&&ac)nz(.5,1800,'lowpass',.09)};
+b.addEventListener('click',()=>{try{on=!on;if(on){ac=ac||new(window.AudioContext||window.webkitAudioContext)();ac.resume();tk();iv=setInterval(tk,1000)}else clearInterval(iv)}catch(_){on=false;b.disabled=true}b.setAttribute('aria-pressed',on);b.textContent='Sound: '+(on?'on':'off')})}
+})();
+</script>
+</body>
+</html>
