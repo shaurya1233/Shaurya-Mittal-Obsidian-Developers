@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
 <title>Shaurya Mittal — Full-stack developer · God of HTML5</title>
 <meta name="description" content="Portfolio of Shaurya Mittal, showcasing 22 web projects, interactive interfaces and browser-based experiments built with HTML, CSS, JavaScript, Canvas and WebGL.">
 <link rel="canonical" href="https://shaurya1233.github.io/NOUMEN/">
@@ -990,7 +992,6 @@ html.tr-on #intro{display:none!important}
 #trn .bar{position:absolute;left:0;right:0;height:7vh;background:#000;z-index:2}#trn .bar.t{top:0}#trn .bar.b{bottom:0}
 /* hero tweaks */
 .seal{top:.4rem!important}@media(min-width:901px){.seal{top:-1.6rem!important}}
-.pbtn{position:absolute;left:50%;bottom:-2.6rem;transform:translateX(-50%);z-index:5;background:rgba(16,10,6,.85)!important;border:1px solid var(--g)!important;font-size:.62rem!important;letter-spacing:.2em;white-space:nowrap}
 /* shared paper */
 .torn{clip-path:polygon(0 2%,6% 0,14% 2%,22% 0,31% 2%,40% 0,50% 2%,59% 0,68% 2%,77% 0,86% 2%,94% 0,100% 2%,100% 98%,92% 100%,83% 98%,74% 100%,64% 98%,55% 100%,45% 98%,36% 100%,27% 98%,18% 100%,9% 98%,0 100%)}
 .fell{font-family:"IM Fell English","IM Fell DW Pica","Cormorant Garamond",Georgia,serif}.fsc{font-family:"IM Fell English SC","IM Fell English",Georgia,serif;letter-spacing:.14em;text-transform:uppercase}
@@ -1131,6 +1132,13 @@ header{top:22px!important}
 #verr{margin:0;padding:.6rem;background:#542532;color:#f0dfae;font:1rem var(--serif);text-align:center}
 @media(max-width:560px){.lr{grid-template-columns:1fr}.lrd{max-width:150px;margin:auto}}@media(prefers-reduced-motion:reduce){.lrd,.xl,.xl i{animation:none}}
 </style>
+<style id="x10">
+#h-name .mt{display:inline-block;position:relative;margin-top:.12em;padding:.16em .3em .22em;font-size:.86em;letter-spacing:.14em;text-indent:.14em;color:transparent;text-shadow:none;background:linear-gradient(180deg,#f3e4b8 0,#d6b977 34%,#a58240 58%,#d9c086 100%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 1px 0 #2a1a0e) drop-shadow(0 -1px 0 rgba(255,236,190,.3))}
+#h-name .mt::before,#h-name .mt::after{content:"";position:absolute;left:0;right:0;height:5px;pointer-events:none}
+#h-name .mt::before{top:0;border-top:2px solid #c6a15b;border-bottom:1px solid rgba(198,161,91,.55)}
+#h-name .mt::after{bottom:0;border-top:1px solid rgba(198,161,91,.55);border-bottom:2px solid #c6a15b}
+@media(max-width:380px){#h-name .mt{letter-spacing:.08em;text-indent:.08em}}
+</style>
 </head>
 <body class="lock"><script>document.documentElement.classList.add('tr-on');window.__trFail=setTimeout(function(){var t=document.getElementById('trn');if(t)t.remove();document.documentElement.classList.remove('tr-on')},16000)</script>
 <div id="trn" role="dialog" aria-label="Opening film"><canvas id="trc" aria-hidden="true"></canvas><div class="bar t"></div><div class="bar b"></div><div class="tt" id="trt"><p>Shaurya Mittal presents</p><i></i><h2>NOUMEN</h2><i></i><small>The night express arrives · Nº 22</small></div><button id="trsnd" type="button">♪ Tap for sound</button><div id="trl" aria-live="polite">Preparing the station…</div><button id="tre" type="button">Enter the Estate</button><button id="trmu" type="button">Mute</button><button id="trs" type="button">Skip film</button></div>
@@ -1196,7 +1204,7 @@ header{top:22px!important}
 <use href="#mono" x="80" y="110" width="240" height="320"/><g id="hph" style="display:none"><image href="shaurya.jpg" x="100" y="132" width="200" height="276" preserveAspectRatio="xMidYMin slice" clip-path="url(#ov1)" role="img" aria-label="Portrait of Shaurya Mittal" style="filter:sepia(.3) contrast(1.05) saturate(.9)"/><ellipse cx="200" cy="270" rx="100" ry="138" fill="none" stroke="url(#gg)" stroke-width="2.5"/></g><g clip-path="url(#ov1)"><g class="glint"><rect x="-70" y="120" width="34" height="320" transform="skewX(-18)" fill="#fff" opacity=".13"/></g></g>
 <g fill="none" stroke="url(#gg)" stroke-width="3.5" stroke-linecap="round"><path d="M70 250c-16-4-22-22-10-32 9-7 20 0 17 9-2 6-10 6-10 1M70 290c-16 4-22 22-10 32 9 7 20 0 17-9-2-6-10-6-10-1"/><g transform="translate(400 0) scale(-1 1)"><path d="M70 250c-16-4-22-22-10-32 9-7 20 0 17 9-2 6-10 6-10 1M70 290c-16 4-22 22-10 32 9 7 20 0 17-9-2-6-10-6-10-1"/></g></g><path d="M166 444a34 28 0 0 1 68 0z" fill="url(#gg)" stroke="#17100B"/><path d="M200 444v-27M200 444l-17-21M200 444l17-21M200 444l-28-12M200 444l28-12" stroke="#17100B" stroke-width=".8" fill="none"/>
 <g id="lau" fill="url(#gg)" opacity=".9"></g><g><rect x="128" y="458" width="144" height="28" fill="url(#brs)" stroke="#17100B" stroke-width="1.5"/><rect x="132" y="462" width="136" height="20" fill="none" stroke="#17100B" stroke-width=".7"/><text x="200" y="476" text-anchor="middle" font-family="Special Elite,Courier New,monospace" font-size="10" letter-spacing="2.2" fill="#17100B">SHAURYA MITTAL</text></g><g transform="translate(45 292)"><circle class="gl2" r="28" cy="-14" fill="url(#fg)"/><path d="M-9 14h18l-3 10h-12z" fill="url(#brs)" stroke="#17100B"/><rect x="-5" y="-2" width="10" height="16" fill="#e9dfc9" stroke="#8a6d3b"/><path class="fl2" d="M0-24c7 9 7 15 0 22-7-7-7-13 0-22z" fill="#ffc45a"/></g><g transform="translate(355 292)"><circle class="gl2" r="28" cy="-14" fill="url(#fg)"/><path d="M-9 14h18l-3 10h-12z" fill="url(#brs)" stroke="#17100B"/><rect x="-5" y="-2" width="10" height="16" fill="#e9dfc9" stroke="#8a6d3b"/><path class="fl2" d="M0-24c7 9 7 15 0 22-7-7-7-13 0-22z" fill="#ffc45a"/></g></svg></div>
-<h1 id="h-name">SHAURYA<br>MITTAL</h1>
+<h1 id="h-name">SHAURYA<br><span class="mt">MITTAL</span></h1>
 <p class="idn">Student Developer · AI-Assisted Digital Creator</p><p class="motto">Functio ante ornamentum</p>
 <p class="lead">An independent exploration of technology, digital craftsmanship, creative development and the art of building extraordinary digital experiences.</p>
 <div class="bt"><a class="btn" href="#collection">Explore the collection</a><a class="btn" href="#collaborations">Discover my work</a></div><div class="v5f" aria-hidden="true"><span>Perfect cut</span><span>Double stitched</span><span>Patent buttons</span></div><a class="scrl" href="#author" aria-label="Continue to the author">&#9758;&#xFE0E;</a>
@@ -1987,14 +1995,17 @@ chair:()=>'<svg viewBox="0 0 100 70" fill="none" stroke="#e8dcc0" stroke-width="
 sundae:()=>'<svg viewBox="0 0 100 70" fill="none" stroke="#e8dcc0" stroke-width="1.4"><path d="M16 38h68c-4 18-14 26-34 26S20 56 16 38z"/><g fill="#e8dcc0" opacity=".9"><circle cx="32" cy="30" r="9"/><circle cx="50" cy="26" r="11"/><circle cx="68" cy="30" r="9"/></g><circle cx="50" cy="12" r="3" fill="#a8262b" stroke="none"/><path d="M40 64h20v4H40z"/></svg>'};
 $$('[data-art]').forEach(e=>{const f=ART[e.dataset.art];if(f)e.innerHTML=f()});
 $$('svg[data-med]').forEach((s,i)=>{s.innerHTML='<defs><clipPath id="mc'+i+'"><circle cx="100" cy="98" r="62"/></clipPath></defs><g fill="#1b1511">'+wreath(100,98,74,15)+'</g><circle cx="100" cy="98" r="66" fill="#e8e0c8" stroke="#1b1511" stroke-width="3"/><g class="mfb"><circle cx="100" cy="98" r="62" fill="url(#h3)" opacity=".18"/><use href="#mono" x="58" y="40" width="84" height="112"/></g><image class="ph" href="" x="36" y="34" width="128" height="128" preserveAspectRatio="xMidYMin slice" clip-path="url(#mc'+i+')" style="display:none;filter:grayscale(1) contrast(1.3) brightness(1.05)"/><circle cx="100" cy="98" r="62" fill="url(#h4)" opacity=".16" pointer-events="none"/><path d="M14 168q86 28 172 0v26q-86 28-172 0z" fill="#1b1511"/><text x="100" y="188" text-anchor="middle" font-family="Special Elite,monospace" font-size="11" fill="#efe8d6" letter-spacing="2.4">'+s.dataset.med+'</text>'});
-/* ---------- portrait: fit to the oval, search common names, or place one ---------- */
-const hf=$('#hf');let got=!!0,pb=null;
-const setP=u=>{$$('.ph').forEach(im=>{im.setAttribute('href',u);im.style.display='';const f=im.parentNode.querySelector('.mfb');if(f)f.style.display='none'});['#hph','#aph'].forEach(g=>{const e=$(g);if(e){const im=$('image',e);if(im)im.setAttribute('href',u);e.style.display=''}});got=true;if(pb)pb.hidden=true};
-let sv=null;try{sv=localStorage.getItem('noumen_portrait')}catch(e){}
-if(sv){setP(sv)}else{const L=['shaurya.jpg','shaurya.jpeg','shaurya.png','shaurya.webp','ss.jpg','ss.jpeg','ss.png','yy.jpg','photo.jpg','me.jpg'];(function nx(i){if(i>=L.length||got)return;const im=new Image();im.onload=()=>{if(!got)setP(L[i])};im.onerror=()=>nx(i+1);im.src=L[i]})(0)}
-if(hf){if(getComputedStyle(hf).position==='static')hf.style.position='relative';
- pb=document.createElement('button');pb.type='button';pb.className='btn pbtn';pb.textContent='Place your portrait';const fi=document.createElement('input');fi.type='file';fi.accept='image/*';fi.hidden=true;hf.append(pb,fi);pb.hidden=true;setTimeout(()=>{if(!got)pb.hidden=false},1800);
- pb.addEventListener('click',()=>fi.click());fi.addEventListener('change',()=>{const f=fi.files&&fi.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const c=document.createElement('canvas');c.width=500;c.height=690;const g=c.getContext('2d'),ar=500/690;let sw=im.width,sh=im.height,sx=0,sy=0;if(sw/sh>ar){const nw=sh*ar;sx=(sw-nw)/2;sw=nw}else{const nh=sw/ar;sy=Math.max(0,(sh-nh)*.2);sh=nh}g.drawImage(im,sx,sy,sw,sh,0,0,500,690);const u=c.toDataURL('image/jpeg',.88);setP(u);try{localStorage.setItem('noumen_portrait',u)}catch(e){}};im.src=r.result};r.readAsDataURL(f)})}
+/* ---------- portrait: shaurya.jpg fills the hero oval, yy.jpg the author oval; no visitor upload ---------- */
+try{localStorage.removeItem('noumen_portrait')}catch(e){}
+{const setMed=u=>{$$('.ph').forEach(im=>{im.setAttribute('href',u);im.style.display='';const f=im.parentNode.querySelector('.mfb');if(f)f.style.display='none'})};
+const fitP=(u,ar,done)=>{const im=new Image();im.onerror=()=>done(null);im.onload=()=>{try{const w=im.naturalWidth,h=im.naturalHeight,k=Math.min(1,160/Math.max(w,h)),aw=Math.max(1,w*k|0),ah=Math.max(1,h*k|0),a=document.createElement('canvas');a.width=aw;a.height=ah;const x=a.getContext('2d');x.drawImage(im,0,0,aw,ah);const d=x.getImageData(0,0,aw,ah).data,L=i=>d[i]*.3+d[i+1]*.59+d[i+2]*.11,R=y=>{let s=0;for(let i=0;i<aw;i++)s+=L((y*aw+i)*4);return s/aw},C=q=>{let s=0;for(let j=0;j<ah;j++)s+=L((j*aw+q)*4);return s/ah};
+let t=0,bt=ah-1,l=0,r=aw-1;while(t<bt&&R(t)<16)t++;while(bt>t&&R(bt)<16)bt--;while(l<r&&C(l)<16)l++;while(r>l&&C(r)<16)r--;if(t>ah*.4)t=0;if(bt<ah*.6)bt=ah-1;if(l>aw*.4)l=0;if(r<aw*.6)r=aw-1;
+let sx=l/k,sy=t/k,sw=(r-l+1)/k,sh=(bt-t+1)/k;if(sw/sh>ar){const nw=sh*ar;sx+=(sw-nw)/2;sw=nw}else{const nh=sw/ar;sy+=(sh-nh)*.3;sh=nh}
+const c=document.createElement('canvas');c.width=440;c.height=Math.round(440/ar);c.getContext('2d').drawImage(im,sx,sy,sw,sh,0,0,c.width,c.height);done(c.toDataURL('image/jpeg',.92))}catch(e){done(u)}};im.src=u};
+const put=(g,u)=>{const e=$(g);if(!e)return;const im=$('image',e);if(im){im.setAttribute('href',u);im.setAttribute('preserveAspectRatio','xMidYMid slice')}e.style.display=''};
+const first=(L,i,cb)=>{if(i>=L.length){cb(null);return}const im=new Image();im.onload=()=>cb(L[i]);im.onerror=()=>first(L,i+1,cb);im.src=L[i]};
+first(['shaurya.jpg','shaurya.jpeg','shaurya.png','shaurya.webp','ss.jpg','ss.jpeg','ss.png','yy.jpg','photo.jpg','me.jpg'],0,u=>{if(!u)return;setMed(u);fitP(u,200/276,f=>put('#hph',f||u))});
+fitP('yy.jpg',200/276,f=>{if(!f)return;put('#aph',f);const c=$('.pf figcaption');if(c)c.textContent='Plate I · The author'})}
 /* ---------- the gramophone library ---------- */
 const bg=$('#bgm'),rec=$('#rec'),gL=$('#gl'),cab=$('#gcab');
 if(gL&&bg){const Mi=m=>440*Math.pow(2,(m-69)/12);let ac,mg,cur=0,playing=false,vol=.55,tm=0,stp=0,nx=0;
