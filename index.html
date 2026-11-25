@@ -1139,6 +1139,32 @@ header{top:22px!important}
 #h-name .mt::after{bottom:0;border-top:1px solid rgba(198,161,91,.55);border-bottom:2px solid #c6a15b}
 @media(max-width:380px){#h-name .mt{letter-spacing:.08em;text-indent:.08em}}
 </style>
+<style id="wdx-css">
+.wdx{position:relative;padding:clamp(3rem,8vw,6rem) 1rem;background:radial-gradient(ellipse at 50% 0,#3a2410,#120c07 72%);color:#e9dfc9;overflow:hidden;border-top:1px solid #c6a15b66}
+.wdx *{box-sizing:border-box}.wdx-in{max-width:1000px;margin:0 auto}
+.wdx-kick{font:.7rem var(--type);letter-spacing:.4em;text-transform:uppercase;color:#c6a15b;margin:0;text-align:center}
+.wdx-h{font:900 clamp(2rem,6.4vw,3.8rem)/1.08 var(--disp);color:#f0dfae;text-shadow:0 2px 0 #3a2410;margin:.4rem 0;text-align:center}
+.wdx-sub{font:italic clamp(1.05rem,3.4vw,1.3rem)/1.55 var(--serif);text-align:center;max-width:36em;margin:.4rem auto 0;color:#e4d6b4}
+.wdx-rule{display:block;width:min(260px,60%);height:5px;margin:1.4rem auto 2rem;border-top:2px solid #c6a15b;border-bottom:1px solid #c6a15b88}
+.wdx-plate{margin:0 auto;padding:clamp(10px,2.4vw,18px);background:#ece1c6;border:1px solid #967442;box-shadow:0 0 0 6px #17100b,0 0 0 7px #c6a15b,0 34px 70px #000b}
+.wdx-plate img{display:block;width:100%;height:auto;max-width:100%}
+.wdx-plate figcaption,.wdx-proof figcaption{font:italic .95rem/1.4 var(--serif);color:#3a2410;text-align:center;padding-top:.7rem}
+.wdx-cert{max-width:880px}
+.wdx-row{display:grid;gap:2rem;margin-top:clamp(2rem,6vw,3.4rem);align-items:start}
+@media(min-width:860px){.wdx-row{grid-template-columns:1fr 1fr}}
+.wdx-dl{margin:0;padding:1.2rem 1.3rem;border:1px solid #c6a15b88;box-shadow:inset 0 0 0 4px #17100b,inset 0 0 0 5px #c6a15b44;background:#1a1109}
+.wdx-dl div{display:grid;grid-template-columns:minmax(6.5rem,32%) 1fr;gap:.8rem;padding:.65rem 0;border-top:1px solid #c6a15b44}
+.wdx-dl div:first-child{border-top:0}
+.wdx-dl dt{font:.68rem var(--type);letter-spacing:.2em;text-transform:uppercase;color:#c6a15b;align-self:center}
+.wdx-dl dd{margin:0;font:1.1rem/1.4 var(--serif);color:#f0e6cc;overflow-wrap:anywhere}
+.wdx-proof{margin:0;padding:clamp(8px,2vw,12px);background:#ece1c6;border:1px solid #967442;box-shadow:0 0 0 5px #17100b,0 0 0 6px #c6a15b88,0 22px 50px #000a}
+.wdx-proof img{display:block;width:100%;height:auto;max-width:100%}
+.wdx-cta{text-align:center;margin-top:clamp(2rem,6vw,3rem)}
+.wdx-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;max-width:100%;padding:.9rem 1.6rem;text-align:center;text-decoration:none;font:.74rem var(--type);letter-spacing:.2em;text-transform:uppercase;color:#1b120a;background:linear-gradient(#e6c982,#b08a45);border:1px solid #f0dfae;box-shadow:0 0 0 4px #17100b,0 0 0 5px #c6a15b,0 10px 24px #0008;transition:filter .2s,transform .2s}
+.wdx-btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.wdx-btn:focus-visible{outline:3px solid #ffb43a;outline-offset:5px}
+.wdx-note{font:.9rem/1.5 var(--serif);text-align:center;opacity:.8;margin:1rem 0 0}
+@media(prefers-reduced-motion:reduce){.wdx-btn{transition:none}}
+</style>
 </head>
 <body class="lock"><script>document.documentElement.classList.add('tr-on');window.__trFail=setTimeout(function(){var t=document.getElementById('trn');if(t)t.remove();document.documentElement.classList.remove('tr-on')},16000)</script>
 <div id="trn" role="dialog" aria-label="Opening film"><canvas id="trc" aria-hidden="true"></canvas><div class="bar t"></div><div class="bar b"></div><div class="tt" id="trt"><p>Shaurya Mittal presents</p><i></i><h2>NOUMEN</h2><i></i><small>The night express arrives · Nº 22</small></div><button id="trsnd" type="button">♪ Tap for sound</button><div id="trl" aria-live="polite">Preparing the station…</div><button id="tre" type="button">Enter the Estate</button><button id="trmu" type="button">Mute</button><button id="trs" type="button">Skip film</button></div>
@@ -1283,6 +1309,14 @@ header{top:22px!important}
 
 <section id="contents" class="ivo" aria-labelledby="h-toc"><div class="in"><p class="eb">Table of contents</p><h2 id="h-toc">The Contents</h2><p class="sub">Every room of the estate, in order.</p><ol class="toc" id="toc"></ol></div></section>
 <section id="clock" class="wal" aria-labelledby="h-clk"><div class="in two"><div class="rv"><p class="eb">The antique clock</p><h2 id="h-clk">The Antique Clock</h2><p class="sub">Real local time, kept by the estate.</p><p class="lcd" id="cdt"></p></div><figure class="clk rv"><svg id="clk" viewBox="-110 -110 220 220" role="img" aria-label="Antique clock with Roman numerals showing your current local time"></svg></figure></div></section>
+<section id="wdawards" class="wdx" aria-labelledby="wdx-h"><div class="wdx-in">
+<p class="wdx-kick">Recognition</p><h2 class="wdx-h" id="wdx-h">WD Awards Nominee</h2>
+<p class="wdx-sub">NOUMEN — The Night Express has been recognised as a nominee on WD Awards.</p><span class="wdx-rule" aria-hidden="true"></span>
+<figure class="wdx-plate wdx-cert"><img src="ab.jpg" loading="lazy" decoding="async" alt="WD Awards nominee certificate for NOUMEN — The Night Express, created by Shaurya Mittal of India"><figcaption>The WD Awards nominee certificate</figcaption></figure>
+<div class="wdx-row"><dl class="wdx-dl"><div><dt>Status</dt><dd>Nominee</dd></div><div><dt>Project</dt><dd>NOUMEN — The Night Express</dd></div><div><dt>Creator</dt><dd>Shaurya Mittal</dd></div><div><dt>Country</dt><dd>India</dd></div><div><dt>Recognised</dt><dd>25 November 2026</dd></div></dl>
+<figure class="wdx-proof"><img src="abb.jpg" loading="lazy" decoding="async" alt="Screenshot of the NOUMEN — The Night Express listing on the official WD Awards website"><figcaption>The NOUMEN listing on the WD Awards website</figcaption></figure></div>
+<div class="wdx-cta"><a class="wdx-btn" href="https://wdawards.com/web/noumen-the-night-express" target="_blank" rel="noopener noreferrer">View official WD Awards nomination</a><p class="wdx-note">Opens the official listing on wdawards.com in a new tab.</p></div>
+</div></section>
 <section id="wireless" class="par" aria-labelledby="h-wl"><div class="in"><p class="eb">The wireless</p><h2 id="h-wl">The Wireless</h2><p class="sub">A valve radio for the estate’s one station. Power it, turn the dial away from 92.4 to find the static, and bring it back for a clear signal.</p>
 <div class="radio rv"><div class="rtop"><span class="rlab">Nº 1 · NOUMEN WIRELESS</span><span class="rlab" id="rf">92.4 MHz</span></div><div class="strip" id="rl" aria-live="polite"></div>
 <div class="rbody"><div class="dial"><div class="scale" id="rs"></div><input id="rt" type="range" min="880" max="1080" value="924" aria-label="Tuning dial from 88 to 108 megahertz"></div>
